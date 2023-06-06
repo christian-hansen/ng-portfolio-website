@@ -10,6 +10,7 @@ import { SectionSkillsComponent } from './section-skills/section-skills.componen
 import { SectionPortfolioComponent } from './section-portfolio/section-portfolio.component';
 import { SectionContactComponent } from './section-contact/section-contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     SectionSkillsComponent,
     SectionPortfolioComponent,
     SectionContactComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderMobileComponent
   ],
   imports: [
     BrowserModule,
