@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 100px;
+
+    position: absolute;
+width: calc(100% - 200px);
+left: 0px;
+top: 0px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 29px;
+}
+
+.logo {
+    font-size: 32px;
+}
