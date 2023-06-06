@@ -1,7 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+// styles.scss
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+  }
+
+
+:root {
+    --color-green: #70E61C;
+    --color-lightblue: #1CDAE6;
+    --color-purple: #9747FF;
+    --color-darkbluebg: #141D2F;
+    --color-darkbluetransparency:rgba(20, 29, 47, 0.8);
+}
+
+
+
 body {
-    background-color: #141D2F;
+    background-color: var(--color-darkbluetransparency);
     color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 .subtitle {

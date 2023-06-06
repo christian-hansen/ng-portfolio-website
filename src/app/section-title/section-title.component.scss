@@ -1,0 +1,33 @@
+.section-title-container {
+    background-color: var(--color-darkbluebg);
+    margin-top: calc(74px + 48px);
+    // padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.title-vertical {
+    color: white;
+    rotate: -90deg;
+    font-size: 32px;
+}
+
+.title-horizontal {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.myname {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+
+.jobtitle {
+    text-transform: uppercase;
+    font-size: 29px;
+    color: var(--color-purple)
+}

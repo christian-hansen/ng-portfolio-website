@@ -1,21 +1,35 @@
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 37px 100px;
+@use "/src/styles.scss";
 
-    position: absolute;
-width: calc(100% - 200px);
-left: 0px;
-top: 0px;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 100px;
+  width: calc(100% - 200px);
+  background-color: var(--color-darkbluebg);
+
+  position:fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
 }
 
 .nav-items {
   display: flex;
   gap: 29px;
+  font-size: 23px;
+
+  a {
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-green);
+    }
+  }
 }
 
 .logo {
-    font-size: 32px;
+  font-size: 32px;
+  font-weight: 700;
 }
