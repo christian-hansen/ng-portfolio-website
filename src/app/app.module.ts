@@ -11,6 +11,7 @@ import { SectionPortfolioComponent } from './section-portfolio/section-portfolio
 import { SectionContactComponent } from './section-contact/section-contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
+import { SectionIconsComponent } from './section-icons/section-icons.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
     SectionPortfolioComponent,
     SectionContactComponent,
     FooterComponent,
-    HeaderMobileComponent
+    HeaderMobileComponent,
+    SectionIconsComponent
   ],
   imports: [
     BrowserModule,
