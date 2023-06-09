@@ -1,0 +1,11 @@
+.aboutcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileimage {
+    margin-top: 85px;
+    margin-bottom: 75px;
+    width: 100%;
+    z-index: 9;
+}
