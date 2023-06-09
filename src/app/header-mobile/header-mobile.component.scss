@@ -1,20 +1,17 @@
-.mobileheader {display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 37px 25px;
-// gap: 774px;
-width: calc(100% - 50px);
+.mobileheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 25px;
+  // gap: 774px;
+  width: calc(100% - 50px);
 
-background: #141D2F;
-backdrop-filter: blur(32.5px);
+  background: var(--color-darkbluebg);
+  backdrop-filter: blur(32.5px);
 
-position:fixed;
-left: 0px;
-top: 0px;
-z-index: 10;}
-
-.logo {
-    font-size: 32px;
-    font-weight: 700;
-  }
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}

@@ -1,0 +1,16 @@
+.skills-container {
+    margin: 0px 25px;
+    margin-bottom: 150px;
+}
+
+.skills-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: right;
+
+    h2 {
+        margin: 0;
+        line-height: 100%;
+    }
+}

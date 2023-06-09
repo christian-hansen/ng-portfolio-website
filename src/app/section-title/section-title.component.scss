@@ -1,25 +1,41 @@
 .section-title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleimage {
+    margin-top: 90px;
+    width: 100%;
+}
+
+.title-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title-container {
     background-color: var(--color-darkbluebg);
-    margin-top: calc(74px + 48px);
+    // margin-top: calc(74px + 48px);
     padding: 0;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    padding-top: 210px;
-    width: 390px;
+    padding-top: 22px;
 }
 
 button {
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin-top: 26px;
+    margin-bottom: 70px;
 }
 
 .title-vertical {
     color: white;
     rotate: -90deg;
     font-size: var(--font7);
-    width: 19%;
+    // width: 19%;
     margin: -6%;
     margin-left: -8%;
 }
@@ -32,7 +48,7 @@ button {
 }
 
 .myname {
-    font-size: 37px;
+    font-size: 35px;
     font-weight: 700;
     color: white;
     line-height: 120%;
@@ -40,7 +56,8 @@ button {
 
 .jobtitle {
     text-transform: uppercase;
-    font-size: 29px;
-    color: var(--color-purple);
+    font-size: 28px;
+    color: var(--color-secondary);
     line-height: 120%;
 }
+

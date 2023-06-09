@@ -24,12 +24,9 @@ nav {
     cursor: pointer;
 
     &:hover {
-      color: var(--color-green);
+      color: var(--color-primary);
     }
   }
 }
 
-.logo {
-  font-size: 32px;
-  font-weight: 700;
-}
+
