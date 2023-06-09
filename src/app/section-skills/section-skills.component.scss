@@ -1,16 +1,38 @@
 .skills-container {
-    margin: 0px 25px;
-    margin-bottom: 150px;
+  margin: 0px 25px;
+  margin-bottom: 150px;
 }
 
 .skills-intro {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  text-align: right;
 
-    h2 {
-        margin: 0;
-        line-height: 100%;
-    }
+  h2 {
+    margin: 0;
+    line-height: 100%;
+  }
+}
+
+.skills-icons-container {
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.skill-item {
+  flex: 1 0 32%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+
+  img {
+    height: 45px;
+  }
 }

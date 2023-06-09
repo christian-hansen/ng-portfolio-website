@@ -34,5 +34,9 @@ form {
     /* or 19px */
 
     color: #ffffff;
+
+    &:focus-visible {
+        outline-color:  var(--color-primary);
+    }
   }
 }

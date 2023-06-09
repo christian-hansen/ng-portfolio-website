@@ -24,7 +24,8 @@ import { SectionIconsComponent } from './section-icons/section-icons.component';
     SectionContactComponent,
     FooterComponent,
     HeaderMobileComponent,
-    SectionIconsComponent
+    SectionIconsComponent,
+  
   ],
   imports: [
     BrowserModule,
