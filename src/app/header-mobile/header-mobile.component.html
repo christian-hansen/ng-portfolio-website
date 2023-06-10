@@ -1,9 +1,10 @@
 <div class="mobileheader">
     <div class="logo">CH <span>dev</span></div>
-    <img src="/assets/img/icons/mobile-menu.png">
+    <img src="/assets/img/icons/mobile-menu.png" (click)="toggleMobileNav()">
 </div> 
-<!-- <div class="nav-items subtitle">
+<div *ngIf="displayMobileNav" class="mobilemenu">
     <a>About me</a>
     <a>Skills</a>
     <a>Portfolio</a>
-</div> -->
+    <a>Contact</a>
+</div>

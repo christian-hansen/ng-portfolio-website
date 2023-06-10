@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-mobile.component.scss']
 })
 export class HeaderMobileComponent {
+displayMobileNav = false;
+
+  toggleMobileNav() {
+    this.displayMobileNav = !this.displayMobileNav;
+  }
 
 }
