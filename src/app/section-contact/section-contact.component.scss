@@ -4,39 +4,4 @@
   margin: 0px 25px;
 }
 
-form {
-    margin-top: 45px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 35px;
 
-  input[type="text"], input[type="email"] {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 15px 25px;
-    gap: 10px;
-    /* Style 1/Syle 1 a - green purple/Blue bg */
-
-    background: var(--color-darkbluebg);
-    /* Style 1/Syle 1 a - green purple/PURPLE */
-
-    border: 1px solid var(--color-secondary);
-    border-radius: 10px;
-
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    /* or 19px */
-
-    color: #ffffff;
-
-    &:focus-visible {
-        outline-color:  var(--color-primary);
-    }
-  }
-}

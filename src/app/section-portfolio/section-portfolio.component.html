@@ -4,118 +4,31 @@
 </div>
 <div class="portfolio-items-container">
     <!-- Portfolio item -->
-    <div class="portfolio-item">
+    <div class="portfolio-item" *ngFor="let portfolioItem of portfolio; let i = index;">
         <!-- Portfolio item default view -->
-        <img *ngIf="displayPortfolioItem1" (mouseover)="togglePortfolioItem(1)" class="portfolio-image"
-            src="/assets/img/portfolio/Pollo-Loco01.png" alt="">
+        <img id="portfolioitem{{i}}" (mouseover)="openPortfolioItem(i)" class="portfolio-image" src="{{ portfolioItem['mainImage'] }}"
+            alt="{{ portfolioItem['title'] }} image">
 
         <!-- Portfolio item detailed view -->
-        <div *ngIf="!displayPortfolioItem1" (mouseleave)="togglePortfolioItem(1)" class="portfolio-item-detail"
-            style="background-image: url(/assets/img/portfolio/Pollo-Loco00.png); background-position: top; background-size: contain; filter: brightness(100%)">
+        <div id="portfolioitemdetail{{i}}" (mouseleave)="closePortfolioItem(i)" class="portfolio-item-detail d-none"
+            style="background-image: url({{ portfolioItem['backgroundImage'] }}); background-position: top; background-size: contain; filter: brightness(100%)">
             <div class="background-container"></div>
-            <div class="btn-container"><button class="secondary-btn">Github</button><button class="secondary-btn">Live
-                    test</button></div>
+            <div class="btn-container">
+                <a href="{{ portfolioItem['gitLink'] }}" target="_blank"><button
+                        class="secondary-btn">Github</button></a>
+                <a href="{{ portfolioItem['liveLink'] }}" target="_blank"><button class="secondary-btn">Live
+                        test</button></a>
+            </div>
             <div class="infos-container">
-                <h4>El Pollo Loco</h4>
-                <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</p>
+                <h4>{{ portfolioItem['title'] }}</h4>
+                <p>{{ portfolioItem['description'] }}</p>
                 <div class="tag-container">
-                    <div>Javascript</div><span> | </span>
-                    <div>HTML</div><span> | </span>
-                    <div>CSS</div>
+                    <div *ngFor="let tag of portfolioItem['tags']; let j = index">{{tag}}
+                        <span *ngIf="j < portfolioItem['tags'].length - 1"> |</span>
+                    </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
-    <!-- Portfolio item -->
-    <div class="portfolio-item">
-        <!-- Portfolio item default view -->
-        <img *ngIf="displayPortfolioItem2" (mouseover)="togglePortfolioItem(2)" class="portfolio-image"
-            src="/assets/img/portfolio/Pollo-Loco01.png" alt="">
 
-        <!-- Portfolio item detailed view -->
-        <div *ngIf="!displayPortfolioItem2" (mouseleave)="togglePortfolioItem(2)" class="portfolio-item-detail"
-            style="background-image: url(/assets/img/portfolio/Pollo-Loco00.png); background-position: top; background-size: contain; filter: brightness(100%)">
-            <div class="background-container"></div>
-            <div class="btn-container"><button class="secondary-btn">Github</button><button class="secondary-btn">Live
-                    test</button></div>
-            <div class="infos-container">
-                <h4>El Pollo Loco</h4>
-                <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</p>
-                <div class="tag-container">
-                    <div>Javascript</div><span> | </span>
-                    <div>HTML</div><span> | </span>
-                    <div>CSS</div>
-                </div>
-            </div>
-        </div>        
-    </div>
-    <!-- Portfolio item -->
-    <div class="portfolio-item">
-        <!-- Portfolio item default view -->
-        <img *ngIf="displayPortfolioItem3" (mouseover)="togglePortfolioItem(3)" class="portfolio-image"
-            src="/assets/img/portfolio/Pollo-Loco01.png" alt="">
-
-        <!-- Portfolio item detailed view -->
-        <div *ngIf="!displayPortfolioItem3" (mouseleave)="togglePortfolioItem(3)" class="portfolio-item-detail"
-            style="background-image: url(/assets/img/portfolio/Pollo-Loco00.png); background-position: top; background-size: contain; filter: brightness(100%)">
-            <div class="background-container"></div>
-            <div class="btn-container"><button class="secondary-btn">Github</button><button class="secondary-btn">Live
-                    test</button></div>
-            <div class="infos-container">
-                <h4>El Pollo Loco</h4>
-                <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</p>
-                <div class="tag-container">
-                    <div>Javascript</div><span> | </span>
-                    <div>HTML</div><span> | </span>
-                    <div>CSS</div>
-                </div>
-            </div>
-        </div>        
-    </div>
-    <!-- Portfolio item -->
-    <div class="portfolio-item">
-        <!-- Portfolio item default view -->
-        <img *ngIf="displayPortfolioItem4" (mouseover)="togglePortfolioItem(4)" class="portfolio-image"
-            src="/assets/img/portfolio/Pollo-Loco01.png" alt="">
-
-        <!-- Portfolio item detailed view -->
-        <div *ngIf="!displayPortfolioItem4" (mouseleave)="togglePortfolioItem(4)" class="portfolio-item-detail"
-            style="background-image: url(/assets/img/portfolio/Pollo-Loco00.png); background-position: top; background-size: contain; filter: brightness(100%)">
-            <div class="background-container"></div>
-            <div class="btn-container"><button class="secondary-btn">Github</button><button class="secondary-btn">Live
-                    test</button></div>
-            <div class="infos-container">
-                <h4>El Pollo Loco</h4>
-                <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</p>
-                <div class="tag-container">
-                    <div>Javascript</div><span> | </span>
-                    <div>HTML</div><span> | </span>
-                    <div>CSS</div>
-                </div>
-            </div>
-        </div>        
-    </div>
-    <!-- Portfolio item -->
-    <div class="portfolio-item">
-        <!-- Portfolio item default view -->
-        <img *ngIf="displayPortfolioItem5" (mouseover)="togglePortfolioItem(5)" class="portfolio-image"
-            src="/assets/img/portfolio/Pollo-Loco01.png" alt="">
-
-        <!-- Portfolio item detailed view -->
-        <div *ngIf="!displayPortfolioItem5" (mouseleave)="togglePortfolioItem(5)" class="portfolio-item-detail"
-            style="background-image: url(/assets/img/portfolio/Pollo-Loco00.png); background-position: top; background-size: contain; filter: brightness(100%)">
-            <div class="background-container"></div>
-            <div class="btn-container"><button class="secondary-btn">Github</button><button class="secondary-btn">Live
-                    test</button></div>
-            <div class="infos-container">
-                <h4>El Pollo Loco</h4>
-                <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</p>
-                <div class="tag-container">
-                    <div>Javascript</div><span> | </span>
-                    <div>HTML</div><span> | </span>
-                    <div>CSS</div>
-                </div>
-            </div>
-        </div>        
-    </div>
 </div>

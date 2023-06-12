@@ -1,24 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from '../portfolio.service';
 
 @Component({
   selector: 'app-section-portfolio',
   templateUrl: './section-portfolio.component.html',
-  styleUrls: ['./section-portfolio.component.scss']
+  styleUrls: ['./section-portfolio.component.scss'],
 })
-export class SectionPortfolioComponent {
-  displayPortfolioItem1 = true;
-  displayPortfolioItem2 = true;
-  displayPortfolioItem3 = true;
-  displayPortfolioItem4 = true;
-  displayPortfolioItem5 = true;
+export class SectionPortfolioComponent implements OnInit {
+  portfolio: any = [];
 
-  togglePortfolioItem(input: number) {
-    console.log(input);
-    
-  if (input === 1) {this.displayPortfolioItem1 = !this.displayPortfolioItem1;}
-  else if (input === 2) {this.displayPortfolioItem2 = !this.displayPortfolioItem2;}
-  else if (input === 3) {this.displayPortfolioItem3 = !this.displayPortfolioItem3;}
-  else if (input === 4) {this.displayPortfolioItem4 = !this.displayPortfolioItem4;}
-  else if (input === 5) {this.displayPortfolioItem5 = !this.displayPortfolioItem5;}
+  constructor(private portfolioItemService: PortfolioService) {}
+
+  ngOnInit(): void {
+    this.getPortfolioItems();
+  }
+
+  openPortfolioItem(input: number) {
+    const item = document.getElementById('portfolioitem' + input);
+    const itemdetail = document.getElementById('portfolioitemdetail' + input);
+
+    if (item != null && itemdetail != null) {
+      item.classList.add('d-none');
+      itemdetail.classList.remove('d-none');
+    }
+  }
+
+  closePortfolioItem(input: number) {
+    const item = document.getElementById('portfolioitem' + input);
+    const itemdetail = document.getElementById('portfolioitemdetail' + input);
+
+    if (item != null && itemdetail != null) {
+      item.classList.remove('d-none');
+      itemdetail.classList.add('d-none');
+    }
+  }
+
+  getPortfolioItems() {
+    this.portfolio = this.portfolioItemService.getPortfolio();
   }
 }

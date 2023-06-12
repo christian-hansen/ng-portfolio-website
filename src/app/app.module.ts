@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 import { SectionIconsComponent } from './section-icons/section-icons.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,11 +29,13 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
     HeaderMobileComponent,
     SectionIconsComponent,
     PortfolioItemComponent,
-  
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
