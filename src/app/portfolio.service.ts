@@ -22,7 +22,7 @@ portfolioitems: any = [
     liveLink: 'https://www.hansen-net.de',
     title: 'JOIN',
     description: 'Lorem ipsum...',
-    tags: ['Angular', 'Javascript', 'HTML', 'CSS']
+    tags: ['Angular', 'Javascript', 'HTML', 'CSS', 'Firebase']
   },
   {
     mainImage: "/assets/img/portfolio/Pollo-Loco01.png",
