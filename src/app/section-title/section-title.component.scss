@@ -47,6 +47,7 @@
 .title-horizontal {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 81%;
     margin: 0;
 }
@@ -63,7 +64,7 @@
     font-size: 28px;
     color: var(--color-secondary);
     line-height: 120%;
-    margin-bottom: 26px;
+    // margin-bottom: 26px;
 }
 
 .bg-container {
