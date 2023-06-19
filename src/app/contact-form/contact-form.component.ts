@@ -12,23 +12,29 @@ export class ContactFormComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
+  //Validators
+  nameValidationWarn = false;
+  emailValidationWarn = false;
+  messageValidationWarn = false;
+
   async sendMail() {
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let sendButton = this.sendButton.nativeElement;
 
-    nameField.disabled = true;
-    emailField.disabled = true;
-    messageField.disabled = true;
-    sendButton.disabled = true;
+    this.setFormFieldsState(
+      nameField,
+      emailField,
+      messageField,
+      sendButton,
+      true
+    );
 
     //Animation anzeigen
 
     let formData = new FormData();
-    formData.append('name', nameField.value);
-    formData.append('email', emailField.value);
-    formData.append('message', messageField.value);
+    this.appendFormData(formData, nameField, emailField, messageField);
 
     //senden
 
@@ -41,9 +47,42 @@ export class ContactFormComponent {
     );
 
     //Text anzeigen "Nachricht gesendet"
-    nameField.disabled = false;
-    emailField.disabled = false;
-    messageField.disabled = false;
-    sendButton.disabled = false;
+    this.setFormFieldsState(
+      nameField,
+      emailField,
+      messageField,
+      sendButton,
+      false
+    );
+  }
+
+  setFormFieldsState(
+    nameField: HTMLSelectElement,
+    emailField: HTMLSelectElement,
+    messageField: HTMLSelectElement,
+    sendButton: HTMLSelectElement,
+    state: boolean
+  ) {
+    nameField.disabled = state;
+    emailField.disabled = state;
+    messageField.disabled = state;
+    sendButton.disabled = state;
+  }
+
+  appendFormData(
+    formData: FormData,
+    nameField: HTMLSelectElement,
+    emailField: HTMLSelectElement,
+    messageField: HTMLSelectElement
+  ) {
+    formData.append('name', nameField.value);
+    formData.append('email', emailField.value);
+    formData.append('message', messageField.value);
+  }
+
+  validateFormInput() {
+    this.nameValidationWarn = true;
+    this.emailValidationWarn = true;
+    this.messageValidationWarn = true;
   }
 }
