@@ -15,7 +15,6 @@ import { SectionIconsComponent } from './section-icons/section-icons.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FormContactComponent } from './form-contact/form-contact.component';
 import { PortfolioItemBoxComponent } from './portfolio-item-box/portfolio-item-box.component';
 
 @NgModule({
@@ -32,7 +31,6 @@ import { PortfolioItemBoxComponent } from './portfolio-item-box/portfolio-item-b
     SectionIconsComponent,
     PortfolioItemComponent,
     ContactFormComponent,
-    FormContactComponent,
     PortfolioItemBoxComponent
   ],
   imports: [

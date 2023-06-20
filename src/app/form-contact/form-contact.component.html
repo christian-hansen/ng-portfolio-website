@@ -1,9 +1,0 @@
-<form (submit)="sendMail()" ngNativeValidate method="post" #myForm>
-    <input required type="text" placeholder="Your name" name="name" #nameField>
-    <div class="validation-error-msg"><span *ngIf="nameValidationWarn">Your name is required</span></div>
-    <input required type="email" placeholder="Your email" name="email" #emailField>
-    <div class="validation-error-msg"><span *ngIf="emailValidationWarn">Your email is required</span></div>
-    <textarea rows="6" required type="text" placeholder="Your message" name="message" #messageField></textarea>
-    <div class="validation-error-msg"><span *ngIf="messageValidationWarn">Your message is empty</span></div>
-    <div class="btn-container"><button class="main-btn" #sendButton>Send message :)</button></div>
-</form>
