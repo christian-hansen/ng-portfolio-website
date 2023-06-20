@@ -8,8 +8,8 @@ form {
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 15px;
-  
+  gap: 25px;
+
   input[type="text"],
   input[type="email"],
   textarea {
@@ -18,11 +18,9 @@ form {
     border-radius: 10px;
     padding: 15px 25px;
 
-
     background: var(--color-darkbluebg);
 
-
-    border: 1px solid var(--color-secondary);
+    border: 2px solid var(--color-secondary);
     border-radius: 10px;
 
     font-family: "Poppins";
@@ -30,23 +28,63 @@ form {
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-   
 
     color: #ffffff;
 
     &:focus-visible {
-      outline-color: var(--color-primary);
-      color: var(--color-primary);
+      border: none;
+      outline: 2px solid var(--color-primary);
+      color: white;
     }
   }
 
-  .validation-error-msg {
-    width: 100%;
-    margin: 0;
-    color: var(--color-red) !important; 
-    font-size: var(--font10);
-    text-align: left;
+  textarea {
+    padding-right: 50px;
   }
+}
 
-  
+.validation-error-msg {
+  width: 100%;
+  margin: 0;
+  color: var(--color-red) !important;
+  font-size: var(--font10);
+  text-align: left;
+}
+
+.errorAlert {
+  display: flex;
+  justify-content: center;
+  width: calc(100% + 25px);
+}
+
+.successAlert {
+  display: flex;
+  justify-content: center;
+  width: calc(100% + 25px);
+}
+
+.errorInput {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: none;
+    outline: 2px solid red !important;
+    color: white;
+  }
+}
+
+.alertImg {
+  position: relative;
+  top: 13px;
+  right: 45px;
+  height: 25px;
+  width: 25px;
+}
+
+.successImg {
+  position: relative;
+  top: 13px;
+  right: 45px;
+  height: 25px;
+  width: 25px;
 }
