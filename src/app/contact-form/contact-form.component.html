@@ -1,33 +1,33 @@
-
-
-<form #contactForm="ngForm">
+<form #contactForm="ngForm" ngNativeValidate (ngSubmit)="logMail()">
   <div class="form-group">
-  <input
-    type="text"
-    id="inputName"
-    name="inputName"
-    class="form-control"
-    required
-    minlength="2"
-    [(ngModel)]="inputData.inputName"
-    #inputName="ngModel"
-    placeholder="Your name"
-  />
+    <input
+      type="text"
+      id="inputName"
+      name="inputName"
+      class="form-control"
+      required
+      minlength="2"
+      [(ngModel)]="inputData.inputName"
+      #inputName="ngModel"
+      placeholder="Your name"
+    />
 
-  <div
-    *ngIf="inputName.invalid && (inputName.dirty || inputName.touched)"
-    class="alert"
-  >
-    <div *ngIf="inputName.errors?.['required']">
-      <span class="validation-error-msg">Your name is required.</span>
-    </div>
-    <div *ngIf="inputName.errors?.['minlength']">
-        <span class="validation-error-msg">Name must be at least 2 characters long.</span>
+    <div
+      *ngIf="inputName.invalid && (inputName.dirty || inputName.touched)"
+      class="alert"
+    >
+      <div *ngIf="inputName.errors?.['required']">
+        <span class="validation-error-msg">Your name is required.</span>
+      </div>
+      <div *ngIf="inputName.errors?.['minlength']">
+        <span class="validation-error-msg"
+          >Name must be at least 2 characters long.</span
+        >
+      </div>
     </div>
   </div>
-</div>
 
-<div class="form-group">
+  <div class="form-group">
     <input
       type="email"
       id="inputEmail"
@@ -38,7 +38,7 @@
       #inputEmail="ngModel"
       placeholder="Your email"
     />
-  
+
     <div
       *ngIf="inputEmail.invalid && (inputEmail.dirty || inputEmail.touched)"
       class="alert"
@@ -49,32 +49,35 @@
     </div>
   </div>
 
-  <!-- <div class="form-group">
+  <div class="form-group">
     <textarea
-      id="inputMessage"
-      rows="4"
       name="inputMessage"
+      id="inputMessage"
+      cols="30"
+      rows="6"
       class="form-control"
       required
       [(ngModel)]="inputData.inputMessage"
       #inputMessage="ngModel"
       placeholder="Your message"
-      />
-  
-    <div *ngIf="inputMessage.invalid && (inputMessage.dirty || inputMessage.touched)"
+    ></textarea>
+    <div
+      *ngIf="
+        inputMessage.invalid && (inputMessage.dirty || inputMessage.touched)
+      "
       class="alert"
     >
       <div *ngIf="inputMessage.errors?.['required']">
-        <span class="validation-error-msg">An email address is required.</span>
+        <span class="validation-error-msg"
+          >Please enter a message you like to send</span
+        >
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="btn-container">
     <button type="submit" class="main-btn" [disabled]="!contactForm.form.valid">
-        Send message :)
+      Send message :)
     </button>
-</div>
-
-
+  </div>
 </form>
