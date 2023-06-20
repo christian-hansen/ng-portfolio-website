@@ -15,6 +15,7 @@ import { SectionIconsComponent } from './section-icons/section-icons.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormContactComponent } from './form-contact/form-contact.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SectionIconsComponent,
     PortfolioItemComponent,
     ContactFormComponent,
+    FormContactComponent,
   ],
   imports: [
     BrowserModule,
