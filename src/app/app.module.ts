@@ -16,6 +16,7 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormContactComponent } from './form-contact/form-contact.component';
+import { PortfolioItemBoxComponent } from './portfolio-item-box/portfolio-item-box.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     PortfolioItemComponent,
     ContactFormComponent,
     FormContactComponent,
+    PortfolioItemBoxComponent
   ],
   imports: [
     BrowserModule,

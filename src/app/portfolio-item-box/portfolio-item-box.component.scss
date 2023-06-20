@@ -1,31 +1,22 @@
 .portfolio-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 35px;
-
+    width: 340px;
+    height: 340px;
+    border: 1px solid #70e61c;
+    border-radius: 15px;
+    background: rgba(20, 29, 47, 0.8);
   
-    // @media (min-width: 700px) {
-    //   //
-    // }
+    @media (min-width: 700px) {
+      //
+    }
   
-    // @media (min-width: 1295px) {
-    //   width: 600px;
-    //   height: 600px;
-    // }
-  }
-
-  .portfolio-image-container {
-    height: 300px;
+    @media (min-width: 1295px) {
+      width: 600px;
+      height: 600px;
+    }
   }
   
   .portfolio-image {
-    height: 300px;
-
-    &:hover {
-      height: 350px;
-    }
+    width: 100%;
   }
   
   .portfolio-item-detail {
@@ -34,7 +25,15 @@
     align-items: center;
     height: 100%;
     border-radius: 15px;
-    gap: 35px;
+  
+  .background-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background: rgba(20, 29, 47, 0.8);
+    z-index: 1;
+  }
   
     .btn-container {
       display: flex;
@@ -47,34 +46,37 @@
     }
   
     .infos-container {
+      height: 50%;
+      width: 90%;
       display: flex;
       flex-direction: column;
-      gap: 15px;
       justify-content: center;
       align-items: center;
-      color: white;
+      color: black;
+      background-color: white;
+      border-radius: 30px 30px 15px 15px;
+      // gap: 27px;
       z-index: 2;
   
+      padding: 6% 6%;
   
       h4 {
         margin: 0;
-        margin-bottom: 15px;
         font-weight: 700;
         line-height: 100%;
-        font-size: var(--font6);
+        font-size: var(--font8);
         color: var(--color-secondary);
       }
   
       p {
         font-size: var(--font9);
         text-align: center;
-        margin: 0;
       }
     }
   
     .tag-container {
       color: var(--color-primary);
-      font-size: var(--font8);
+      font-size: var(--font9);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

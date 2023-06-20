@@ -25,8 +25,8 @@ portfolioitems: any = [
     tags: ['Angular', 'Javascript', 'HTML', 'CSS', 'Firebase']
   },
   {
-    mainImage: "/assets/img/portfolio/Pollo-Loco01.png",
-    backgroundImage: "/assets/img/portfolio/Pollo-Loco00.png",
+    mainImage: "/assets/img/portfolio/pokedex.png",
+    backgroundImage: "/assets/img/portfolio/pokedex.png",
     gitLink: 'https://www.github.com',
     liveLink: 'https://www.hansen-net.de',
     title: 'El Pollo Loco',
@@ -35,8 +35,8 @@ portfolioitems: any = [
     id: 'displayPortfolioItem1'
   },
   {
-    mainImage: "/assets/img/portfolio/Join01.png",
-    backgroundImage: "/assets/img/portfolio/Join00.png",
+    mainImage: "/assets/img/portfolio/crm.png",
+    backgroundImage: "/assets/img/portfolio/crm.png",
     gitLink: 'https://www.github.com',
     liveLink: 'https://www.hansen-net.de',
     title: 'JOIN',
