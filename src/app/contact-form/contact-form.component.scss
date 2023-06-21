@@ -41,6 +41,10 @@ form {
   textarea {
     padding-right: 50px;
   }
+
+  .btn-container {
+    height:260px;
+  }
 }
 
 .validation-error-msg {
@@ -69,6 +73,16 @@ form {
   textarea {
     border: none;
     outline: 2px solid red !important;
+    color: white;
+  }
+}
+
+.successInput {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: none;
+    outline: 2px solid var(--color-primary) !important;
     color: white;
   }
 }

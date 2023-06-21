@@ -146,7 +146,11 @@ app-section-portfolio {
   &:hover {
     padding: 20px 40px;
     background: var(--color-secondary);
-    border-radius: 10px;
+  }
+
+  &:active {
+    background: white;
+    color: black;
   }
 }
 
