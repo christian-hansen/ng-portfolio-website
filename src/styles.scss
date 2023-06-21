@@ -129,6 +129,21 @@ app-section-portfolio {
   margin: 0px 25px;
 }
 
+app-success-message {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-darkbluetransparency);
+  z-index: 9;
+}
+
 .main-btn {
   display: flex;
   flex-direction: row;

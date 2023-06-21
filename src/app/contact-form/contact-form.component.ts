@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
@@ -6,15 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent {
+  @ViewChild('contactForm') formRef!: NgForm;
   inputData = { inputName: '', inputEmail: '', inputMessage: '' };
-
-  async sendMail() {
-    //Animation anzeigen
-
+showSuccess: boolean = false;
+  async sendMailData() {
+  
     let formData = new FormData();
     this.appendFormData(formData, this.inputData);
-
-    //senden
 
     await fetch(
       'https://christian-hansen.developerakademie.net/testmail/send_mail/send_mail.php',
@@ -24,7 +23,6 @@ export class ContactFormComponent {
       }
     );
 
-    //Text anzeigen "Nachricht gesendet"
   }
 
   appendFormDatas(
@@ -44,13 +42,24 @@ export class ContactFormComponent {
     formData.append('message', inputData.inputMessage);
   }
 
-  logMail() {
+  async sendMail() {
+    //Animation anzeigen
     console.log(
       'Message to send:','\n',
       this.inputData.inputName,'\n',
       this.inputData.inputEmail,'\n',
       this.inputData.inputMessage
     );
-    this.sendMail();
+    //senden
+    await this.sendMailData();
+    this.showSuccess = true;
+
+    //TODO 
+    setTimeout(() => {
+      this.showSuccess = false
+    }, 2000);
+    //Reset
+    this.formRef.resetForm();
+    //Text anzeigen "Nachricht gesendet"
   }
 }

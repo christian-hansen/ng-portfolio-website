@@ -29,8 +29,6 @@ form {
     font-size: 16px;
     line-height: 120%;
 
-    color: #ffffff;
-
     &:focus-visible {
       border: none;
       outline: 2px solid var(--color-primary);
@@ -43,7 +41,7 @@ form {
   }
 
   .btn-container {
-    height:260px;
+    height: 260px;
   }
 }
 
@@ -102,3 +100,4 @@ form {
   height: 25px;
   width: 25px;
 }
+

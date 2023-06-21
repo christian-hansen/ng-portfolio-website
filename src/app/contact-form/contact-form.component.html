@@ -1,8 +1,8 @@
-<form #contactForm="ngForm" ngNativeValidate (ngSubmit)="logMail()">
+<form #contactForm="ngForm" ngNativeValidate (ngSubmit)="sendMail()">
   <div class="form-group">
     <div
       [ngClass]="
-        inputName.invalid && (inputName.dirty || inputName.touched)
+        inputName.invalid &&(inputName.dirty || inputName.touched)
           ? 'errorAlert errorInput'
           : inputName.touched || inputName.dirty
           ? 'errorAlert successInput'
@@ -157,3 +157,4 @@
     </button>
   </div>
 </form>
+<app-success-message *ngIf="showSuccess"></app-success-message>

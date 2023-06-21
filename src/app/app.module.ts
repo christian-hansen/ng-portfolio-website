@@ -16,6 +16,7 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PortfolioItemBoxComponent } from './portfolio-item-box/portfolio-item-box.component';
+import { SuccessMessageComponent } from './success-message/success-message.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PortfolioItemBoxComponent } from './portfolio-item-box/portfolio-item-b
     SectionIconsComponent,
     PortfolioItemComponent,
     ContactFormComponent,
-    PortfolioItemBoxComponent
+    PortfolioItemBoxComponent,
+    SuccessMessageComponent
   ],
   imports: [
     BrowserModule,
