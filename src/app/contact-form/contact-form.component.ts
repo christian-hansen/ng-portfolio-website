@@ -51,6 +51,6 @@ export class ContactFormComponent {
       this.inputData.inputEmail,'\n',
       this.inputData.inputMessage
     );
-    // this.sendMail();
+    this.sendMail();
   }
 }
