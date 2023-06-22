@@ -1,23 +1,25 @@
-<div class="bg-container">
-    <div class="bg-shape">
-    <img  src="/assets/img/bg/shape-mobile.png" alt="">
-</div>
-    <div class="bg-colors">
-        <img src="/assets/img/bg/intro-green-shadow.png" alt="">
-        <img src="/assets/img/bg/intro-purple-shadow.png" alt="">
-    </div>
+<div class="image-container">
+  
+
+    <img class="bg-colors" style="margin-right: 33%" src={{bgLeft}} alt="" />
+  <img class="bg-colors" style="margin-left: 33%" src={{bgRight}} alt="" />
+
+  <img class="titleimage" src="/assets/img/user.png" alt="Christian Hansen" />
+  <img class="bg-shape" src="/assets/img/bg/shape-mobile.png" alt="" />
 </div>
 
-<img class="titleimage" src="/assets/img/user.png" alt="Christian Hansen">
+
 <div class="section-title-container">
-    <div class="title-btn-container">
-        <div class="title-container">
-            <div class="title-vertical">I am</div>
-            <div class="title-horizontal">
-                <div class="myname">Christian Hansen</div>
-                <div class="jobtitle">Frontend Developer</div>
-            </div>
-        </div>
-        <div class="btn-container"><button class="main-btn" (click)="scrollToContact()">Let's talk</button></div>
+  <div class="title-btn-container">
+    <div class="title-container">
+      <div class="title-vertical">I am</div>
+      <div class="title-horizontal">
+        <div class="myname">Christian Hansen</div>
+        <div class="jobtitle">Frontend Developer</div>
+      </div>
     </div>
+    <div class="btn-container">
+      <button class="main-btn" (click)="scrollToContact()">Let's talk</button>
+    </div>
+  </div>
 </div>

@@ -57,12 +57,17 @@
 //   --font10x: 12px;
 }
 
+html {
+  scroll-behavior:smooth;
+}
+
 body {
   background-color: var(--color-darkbluebg);
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: var(--font4);
   margin: 0;
+
 }
 
 button {
@@ -149,7 +154,7 @@ app-section-title {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 93vh;
+  height: 93vh;
 }
 
 app-section-portfolio {

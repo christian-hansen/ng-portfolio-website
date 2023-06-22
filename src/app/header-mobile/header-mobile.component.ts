@@ -13,6 +13,7 @@ iconHeader: any = this.iconMenu;
 
 
   toggleMobileNav() {
+console.log("toggle");
 
 
   this.displayMobileNav = !this.displayMobileNav;

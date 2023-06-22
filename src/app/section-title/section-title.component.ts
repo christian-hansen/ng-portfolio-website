@@ -7,6 +7,8 @@ import { ScrollService } from '../scroll.service';
   styleUrls: ['./section-title.component.scss']
 })
 export class SectionTitleComponent {
+  bgLeft: string = "/assets/img/bg/intro-purple-shadow.png";
+  bgRight: string = "/assets/img/bg/intro-green-shadow.png";
 
   constructor(private scrollService: ScrollService) { }
 
