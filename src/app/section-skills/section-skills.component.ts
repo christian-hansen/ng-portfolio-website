@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Data } from '@angular/router';
+import { ScrollService } from '../scroll.service';
 import { SkillsService } from '../skills.service';
 
 @Component({
@@ -11,8 +12,13 @@ import { SkillsService } from '../skills.service';
 export class SectionSkillsComponent implements OnInit {
   skills: any = [];
 
-  constructor(private skillService: SkillsService) {
+  constructor(private skillService: SkillsService, private scrollService: ScrollService) {
 
+  }
+
+
+  scrollToContact(): void {
+    this.scrollService.scrollToContact();
   }
 
   ngOnInit(): void {
