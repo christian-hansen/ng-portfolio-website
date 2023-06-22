@@ -57,7 +57,7 @@ showSuccess: boolean = false;
     //TODO 
     setTimeout(() => {
       this.showSuccess = false
-    }, 2000);
+    }, 5000);
     //Reset
     this.formRef.resetForm();
     //Text anzeigen "Nachricht gesendet"

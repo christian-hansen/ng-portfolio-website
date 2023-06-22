@@ -16,7 +16,7 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PortfolioItemBoxComponent } from './portfolio-item-box/portfolio-item-box.component';
-import { SuccessMessageComponent } from './success-message/success-message.component';
+import { SuccessMessageComponent } from './contact-form/success-message/success-message.component';
 
 @NgModule({
   declarations: [

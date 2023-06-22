@@ -9,6 +9,7 @@ form {
   align-items: center;
   padding: 0px;
   gap: 25px;
+  color: white;
 
   input[type="text"],
   input[type="email"],
@@ -38,6 +39,7 @@ form {
 
   textarea {
     padding-right: 50px;
+    resize: none
   }
 
   .btn-container {

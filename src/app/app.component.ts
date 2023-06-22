@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-website';
+
+  @ViewChild('contact', { static: true }) contact: ElementRef;
+
+  scrollToContact(): void {
+    this.contact.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
 
 }
