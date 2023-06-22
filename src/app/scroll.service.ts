@@ -5,10 +5,10 @@ import { Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class ScrollService {
-  private scrollToContactFormSource = new Subject<void>();
-  scrollToContactForm$ = this.scrollToContactFormSource.asObservable();
+  private scrollToElement = new Subject<void>();
+  scrollToContactForm$ = this.scrollToElement.asObservable();
 
   scrollToContact() {
-    this.scrollToContactFormSource.next();
+    this.scrollToElement.next();
   }
 }

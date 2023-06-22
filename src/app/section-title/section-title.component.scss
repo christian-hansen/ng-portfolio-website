@@ -40,7 +40,7 @@
 .title-vertical {
     color: white;
     rotate: -90deg;
-    font-size: var(--font7);
+    font-size: 28px;
     // width: 19%;
     margin: -6%;
     margin-left: -8%;
@@ -49,13 +49,13 @@
 .title-horizontal {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     width: 81%;
     margin: 0;
 }
 
 .myname {
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 700;
     color: white;
     line-height: 120%;
