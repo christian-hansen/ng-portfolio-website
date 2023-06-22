@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-section-title',
@@ -7,10 +8,10 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class SectionTitleComponent {
 
-  @Output() buttonClick = new EventEmitter<void>();
+  constructor(private scrollService: ScrollService) { }
 
-  scrollToContactForm(): void {
-    this.buttonClick.emit();
+  scrollToContact(): void {
+    this.scrollService.scrollToContact();
   }
 }
 
