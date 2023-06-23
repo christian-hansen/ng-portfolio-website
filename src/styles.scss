@@ -47,6 +47,10 @@
   --font4: 16px;
   --font5: 14px;
 
+  @media (min-width: 1200px) {
+    --font1: 90px;
+  }
+
 //   --font3x: 128px;
 //   --font4x: 90px;
 //   --font5x: 64px;
@@ -55,6 +59,11 @@
 //   --font8x: 23px;
 //   --font9x: 16px;
 //   --font10x: 12px;
+
+//Breakpoint
+--bp-desktop: 1200px;
+--bp-tablet: 768px;
+
 }
 
 html {
