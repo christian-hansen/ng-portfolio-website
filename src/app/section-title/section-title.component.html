@@ -1,13 +1,21 @@
-<div class="image-container">
-  
-
-    <img class="bg-colors" style="padding-right: 33%" src={{bgLeft}} alt="" />
-  <img class="bg-colors" style="padding-left: 33%" src={{bgRight}} alt="" />
+<img class="bg-shape" src="/assets/img/bg/shape-mobile.png" alt="" />
+<div class="fullcontainer"><div class="image-container">
+  <div class="bg-colors-container">
+    <img
+      class="bg-colors"
+      style="margin-left: 3%"
+      src="{{ bgLeft }}"
+    />
+    <img
+      class="bg-colors"
+      style="margin-right: 3%"
+      src="{{ bgRight }}"
+    />
+  </div>
 
   <img class="titleimage" src="/assets/img/user.png" alt="Christian Hansen" />
-  <img class="bg-shape" src="/assets/img/bg/shape-mobile.png" alt="" />
-</div>
 
+</div>
 
 <div class="section-title-container">
   <div class="title-btn-container">
@@ -22,4 +30,5 @@
       <button class="main-btn" (click)="scrollToContact()">Let's talk</button>
     </div>
   </div>
+</div>
 </div>

@@ -3,9 +3,27 @@
     flex-direction: column;
     z-index: 0;
     margin-bottom: 10%;
+
+    @media (min-width: 1200px){
+        width: 50vw;
+    }
 }
 
+.fullcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
 
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+}
 
 .title-btn-container {
     display: flex;
@@ -38,6 +56,11 @@
     // width: 19%;
     margin: -6%;
     margin-left: -8%;
+
+    @media (min-width: 1200px){
+        font-size: 46px;
+        margin: -3%;
+    }
 }
 
 .title-horizontal {
@@ -46,6 +69,8 @@
     // align-items: center;
     width: 81%;
     margin: 0;
+
+
 }
 
 .myname {
@@ -53,6 +78,10 @@
     font-weight: 700;
     color: white;
     line-height: 120%;
+
+    @media (min-width: 1200px){
+        font-size: 53px;
+    }
 }
 
 .jobtitle {
@@ -61,29 +90,60 @@
     color: var(--color-secondary);
     line-height: 120%;
     // margin-bottom: 26px;
+
+    @media (min-width: 1200px){
+        font-size: 44px;
+    }
 }
 
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50%;
     width: 100%;
-    height: 65vh;
+    max-width: 680px;
+
+    @media (min-width: 1200px){
+        width: 50vw;
+    }
+
+    .bg-colors-container {
+        position: absolute;
+        top: 120px;
+        display: flex;
+        flex-direction: row;
+overflow-y: hidden;
+        z-index: -6;
+        height: 100%;
+        width: 100%;
+
+        @media (min-width: 1200px){
+            wwidth: 75vw;
+            top: 270px;
+            overflow: revert;
+        }
+
+
+    }
 
     .bg-colors {
-        position: absolute;
-    top: 110px;
-    z-index: -3;
-    width: 67%;
-    overflow: hidden;
 
-        img {
-            height: 75%;
-            width: 75%;
-            filter: blur(46.5px);
-            transform: rotate(-100.81deg);
-        }
+    width: 45%;
+ scale: 1.1;
+    filter: blur(46.5px);
+    max-height: 800px;
+
+    @media (min-width: 1200px){
+        width: 100%;
+        scale: 1;
+        filter: blur(90px);
+        max-height: 800px;
+        
     }
+    }
+
+    
 
    
 
@@ -95,13 +155,19 @@
         z-index: -2;
         overflow: visible;
 
+        @media (min-width: 1200px){
+
+        
+        }
     }
+
+    
 }
 
 .bg-shape {
     position: absolute;
     width: 100%;
-    top: 10vh;
+    top: calc(100vw - 330px);
     // background: radial-gradient(102.53% 81.55% at 46.74% 3.94%, #1A2743 0.37%, #27334B 13.54%, #141D2F 71.91%);
     
     z-index: -1;
@@ -109,6 +175,13 @@
     img {
         width: 100%;
 
+    }
+
+    @media (min-width: 1200px){
+
+        top: calc(-100vw + 900px);
+
+        
     }
 }
 
