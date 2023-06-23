@@ -1,7 +1,25 @@
 .contact-container {
   display: flex;
   flex-direction: column;
-  margin: 0px 25px;
+  padding: 0px 25px;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 0px 100px;
+  }
 }
 
+.contact-text {
+  @media (min-width: 1200px) {
+    padding-top: 25px;
+    width: 50%;
+  }
+}
 
+app-contact-form {
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+}

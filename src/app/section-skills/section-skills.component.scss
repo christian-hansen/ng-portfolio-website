@@ -1,6 +1,16 @@
 .skills-container {
-  margin: 0px 25px;
+  padding: 0px 25px;
   margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0px 100px;
+  }
 }
 
 .skills-intro {
@@ -13,6 +23,10 @@
     margin: 0;
     line-height: 100%;
   }
+
+  @media (min-width: 1200px) {
+    width: 30%;
+  }
 }
 
 .skills-icons-container {
@@ -22,6 +36,10 @@
   // flex-direction: column;
  
   padding: 0px;
+
+  @media (min-width: 1200px) {
+    width: 60%;
+  }
 }
 
 .skill-item {
@@ -37,5 +55,9 @@
 
   img {
     height: 45px;
+  }
+
+  @media (min-width: 1200px) {
+    flex: 1 0 24%;
   }
 }

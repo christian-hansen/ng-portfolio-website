@@ -7,7 +7,7 @@
   // gap: 774px;
   width: calc(100% - 50px);
 
-  background: var(--color-darkbluebg);
+  background: var(--color-background);
   backdrop-filter: blur(32.5px);
 
   position: fixed;
@@ -44,7 +44,7 @@
 
   height: 100%;
   width: 100%;
-  background-color: var(--color-darkbluetransparency);
+  background-color: var(--color-backgroundtransparent);
   position: fixed;
   top: 0;
   left: 0;
