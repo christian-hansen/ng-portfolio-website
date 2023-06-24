@@ -101,7 +101,7 @@
   max-width: 680px;
 
   @media (min-width: 1200px) {
-    width: 50vw;
+    width: 30vw;
   }
 
   .bg-colors-container {
@@ -115,7 +115,7 @@
     width: 100%;
 
     @media (min-width: 1200px) {
-      wwidth: 75vw;
+      width: 75vw;
       top: 270px;
       overflow: revert;
     }
@@ -162,6 +162,7 @@
   }
 
   @media (min-width: 1200px) {
+    display: none !important;
     top: calc(-100vw + 900px);
   }
 }

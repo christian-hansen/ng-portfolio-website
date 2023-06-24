@@ -33,13 +33,28 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    // padding: 0px;
-    // gap: 25px;
-    // margin-bottom: 80px;
-    // width: 100%;
   }
 
-  @media (min-width: 1300px) {
-    
+  @media (min-width: 1440px) {
+    row-gap: 2vw;
+    column-gap: 2vw;
   }
+
+  @media (min-width: 2055px) {
+    width: 70%;
+  }
+
+  @media (min-width: 2948px) {
+    width: 100%;
+  }
+
+  // @media (min-width: 2330px) {
+  //   row-gap: 2vw;
+  //   column-gap: 8vw;
+  // }
+
+  // @media (min-width: 2775px) {
+  //   row-gap: 2vw;
+  //   column-gap: 2vw;
+  // }
 }
