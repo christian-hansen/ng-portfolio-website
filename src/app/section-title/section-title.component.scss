@@ -141,13 +141,14 @@
 
   .titleimage {
     position: absolute;
-    top: 10vh;
-    width: 75%;
+    top: 15px;
+    width: 400px;
     max-width: 680px;
     z-index: -2;
     overflow: visible;
 
     @media (min-width: 1200px) {
+      position: relative;
       top: 0;
     }
   }
@@ -155,24 +156,19 @@
 
 .bg-shape {
   position: absolute;
-  width: 100%;
-  top: calc(100vw - 330px);
-  // background: radial-gradient(102.53% 81.55% at 46.74% 3.94%, #1A2743 0.37%, #27334B 13.54%, #141D2F 71.91%);
+  top: 40vh;
 
   z-index: -1;
 
-  img {
-    width: 100%;
-  }
-
   @media (min-width: 1200px) {
-    display: none !important;
-    top: calc(-100vw + 900px);
+    top: 50%;
+    width: 100%;
+    margin-left: -125px;
   }
 }
 
 @media (max-width: 1199px) {
   .margin {
-    margin-bottom: 30vw;
+    margin-bottom: 5vh;
   }
 }

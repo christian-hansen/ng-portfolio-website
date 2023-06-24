@@ -193,11 +193,13 @@ h4 {
 }
 
 app-section-title {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 93vh;
+  overflow: hidden;
 
   @media (min-width: 1200px) {
     
