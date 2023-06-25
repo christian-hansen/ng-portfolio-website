@@ -15,9 +15,11 @@
 
 .skills-intro {
   display: flex;
-  flex-direction: column;
-  gap: 35px;
-  text-align: right;
+flex-direction: column;
+justify-content: flex-end;
+gap: 35px;
+text-align: right;
+width: 100%;
 
   h2 {
     margin: 0;
