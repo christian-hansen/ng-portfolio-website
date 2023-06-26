@@ -324,12 +324,11 @@ app-imprint {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 90px;
   align-items: flex-start;
+  margin-top: 90px;
   font-size: var(--font4);
   line-height: 120%;
   padding: 0 25px;
-  height: 100%;
   width: calc(100% - 50px);
   background-color: var(--color-background);
   position: fixed;
@@ -344,8 +343,19 @@ app-imprint {
   }
 
   @media (min-width: 1200px) {
+
     padding: 0 100px;
+    margin-top: 90px;
+    height: 100%;
     width: calc(100% - 200px);
+    
+    // justify-content: center;
+    // align-items: center;
+    // height: 75%;
+    // width: 50%;
+    // border: 1px solid white;
+    // border-radius: 10px;
+    // margin: auto;
   }
 }
 

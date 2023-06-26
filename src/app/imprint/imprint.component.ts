@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-imprint',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./imprint.component.scss']
 })
 export class ImprintComponent {
+@Output() closeImprint: EventEmitter<any> = new EventEmitter;
 
+  closeImprintWindow() {
+    this.closeImprint.emit(null);
+  }
 }

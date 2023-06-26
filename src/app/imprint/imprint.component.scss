@@ -1,5 +1,20 @@
 .imprint-container {
-  //
+  padding-top: 20px;
+
+  @media (min-width: 1200px) {
+    padding-top: 50px;
+    width: 100%;
+  }
+}
+
+.imprint-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      cursor: pointer;
+    }
 }
 
 
