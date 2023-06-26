@@ -60,23 +60,22 @@
     --font4: 23px;
   }
 
-//   --font3x: 128px;
-//   --font4x: 90px;
-//   --font5x: 64px;
-//   --font6x: 45px;
-//   --font7x: 32px;
-//   --font8x: 23px;
-//   --font9x: 16px;
-//   --font10x: 12px;
+  //   --font3x: 128px;
+  //   --font4x: 90px;
+  //   --font5x: 64px;
+  //   --font6x: 45px;
+  //   --font7x: 32px;
+  //   --font8x: 23px;
+  //   --font9x: 16px;
+  //   --font10x: 12px;
 
-//Breakpoint
---bp-desktop: 1200px;
---bp-tablet: 768px;
-
+  //Breakpoint
+  --bp-desktop: 1200px;
+  --bp-tablet: 768px;
 }
 
 html {
-  scroll-behavior:smooth ;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -86,7 +85,6 @@ body {
   font-size: 16px;
   line-height: 120%;
   margin: 0;
-
 }
 
 button {
@@ -110,7 +108,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font3)
+  font-size: var(--font3);
 }
 
 h4 {
@@ -144,6 +142,28 @@ h4 {
 
   @media (min-width: 1200px) {
     width: 75px;
+  }
+}
+
+.scrolldown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 110px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  font-size: var(--font4);
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 1199px) {
+    display: none;
   }
 }
 
@@ -202,16 +222,16 @@ app-section-title {
   overflow: hidden;
 
   @media (min-width: 1200px) {
-    
-      // margin-left: 0px;
-    }
+    // margin-left: 0px;
+  }
 }
 
 app-section-icons {
   @media (min-width: 1200px) {
     .icon-container {
-      margin-left: 125px;}
-}
+      margin-left: 125px;
+    }
+  }
 }
 
 app-section-portfolio {
@@ -239,10 +259,7 @@ app-section-contact {
       margin-bottom: 25px;
     }
   }
-  
 }
-
-
 
 app-success-message {
   height: 100%;
@@ -343,12 +360,11 @@ app-imprint {
   }
 
   @media (min-width: 1200px) {
-
     padding: 0 100px;
     margin-top: 90px;
     height: 100%;
     width: calc(100% - 200px);
-    
+
     // justify-content: center;
     // align-items: center;
     // height: 75%;
@@ -369,14 +385,13 @@ app-footer {
   gap: 30px;
   padding: 50px 25px;
 
-
   @media (min-width: 1200px) {
     padding: 50px 100px;
     flex-direction: row;
-  justify-content: space-between;
-  div {
-    min-width: 33%;
-  }
+    justify-content: space-between;
+    div {
+      min-width: 33%;
+    }
   }
 }
 
@@ -387,24 +402,21 @@ app-footer {
 
 @media (max-width: 1199px) {
   .hidemobile {
-    display: none
+    display: none;
   }
 }
 
 @media (min-width: 1200px) {
-
   .margin-left {
     margin-left: 125px;
   }
 
   .hidedesktop {
-    display: none
+    display: none;
   }
 }
 
-
-
-//Animations 
+//Animations
 @keyframes fadeZoomInOut {
   0% {
     opacity: 0%;

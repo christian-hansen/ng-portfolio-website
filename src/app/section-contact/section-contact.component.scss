@@ -22,4 +22,33 @@ app-contact-form {
   @media (min-width: 1200px) {
     width: 50%;
   }
+
+
 }
+
+.upbtn {
+  margin-top: 45px;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 25px);
+  cursor: pointer;
+
+  div {
+    background: url("/assets/img/icons/up-btn.png");
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 39px;
+
+    &:hover {
+      background: url("/assets/img/icons/up-btn-green.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+@media (min-width: 1200px) {
+  margin-top: 90px;
+  width: calc(100% - 100px);
+}
+
+}
+  
