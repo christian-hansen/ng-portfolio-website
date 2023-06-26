@@ -35,7 +35,7 @@ import { ImprintComponent } from './imprint/imprint.component';
     ContactFormComponent,
     PortfolioItemBoxComponent,
     SuccessMessageComponent,
-    ImprintComponent
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,
