@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { ImprintService } from '../imprint.service';
 
 @Component({
   selector: 'app-imprint',
@@ -8,7 +9,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class ImprintComponent {
 @Output() closeImprint: EventEmitter<any> = new EventEmitter;
 
+constructor(private imprintService: ImprintService) {}
+
   closeImprintWindow() {
-    this.closeImprint.emit(null);
+    this.imprintService.closeImprint();
   }
 }

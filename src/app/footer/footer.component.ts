@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { ImprintService } from '../imprint.service';
 import { ScrollService } from '../scroll.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { ScrollService } from '../scroll.service';
 export class FooterComponent implements AfterViewInit, OnDestroy {
   @ViewChild('bottomSection', { static: true }) target: ElementRef;
   private subscription: Subscription;
-  constructor(private scrollService: ScrollService) {}
+  constructor(private scrollService: ScrollService, private imprintService: ImprintService) {}
 
   ngAfterViewInit() {
     this.subscription = this.scrollService.scrollToBottomSection$.subscribe(
@@ -32,7 +33,6 @@ export class FooterComponent implements AfterViewInit, OnDestroy {
   }
 
   openImprint() {
-    console.log("Open Imprint");
-    
+    this.imprintService.openImprint();    
   }
 }

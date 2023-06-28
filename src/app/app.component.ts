@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { ImprintService } from './imprint.service';
 import { ScrollService } from './scroll.service';
 
 @Component({
@@ -7,12 +7,17 @@ import { ScrollService } from './scroll.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-showImprint: boolean = false;
+export class AppComponent implements OnInit {
+showImprint: boolean;
   
 
 
-constructor (private scrollService: ScrollService) {
+constructor (private scrollService: ScrollService, private imprintService: ImprintService) {}
+
+ngOnInit() {
+  this.imprintService.showImprint.subscribe((value) => {
+    this.showImprint = value;
+  });
 }
 
 scrollToBottom(): void {

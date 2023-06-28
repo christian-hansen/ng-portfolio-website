@@ -38,10 +38,10 @@
       *ngIf="inputName.invalid && (inputName.dirty || inputName.touched)"
       class="alert"
     >
-      <div *ngIf="inputName.errors?.['required']">
+      <div class="validation-container" *ngIf="inputName.errors?.['required']">
         <span class="validation-error-msg">Your name is required.</span>
       </div>
-      <div *ngIf="inputName.errors?.['minlength']">
+      <div class="validation-container" *ngIf="inputName.errors?.['minlength']">
         <span class="validation-error-msg"
           >Name must be at least 2 characters long.</span
         >
@@ -88,12 +88,12 @@
       *ngIf="inputEmail.invalid && (inputEmail.dirty || inputEmail.touched)"
       class="alert"
     >
-      <div *ngIf="inputEmail.errors?.['required']">
+      <div class="validation-container" *ngIf="inputEmail.errors?.['required']">
         <span class="validation-error-msg"
           >Your email address is required.</span
         >
       </div>
-      <div *ngIf="inputEmail.errors?.['pattern']">
+      <div class="validation-container" *ngIf="inputEmail.errors?.['pattern']">
         <span class="validation-error-msg">Please enter an email address.</span>
       </div>
     </div>
@@ -145,7 +145,7 @@
       "
       class="alert"
     >
-      <div *ngIf="inputMessage.errors?.['required']">
+      <div class="validation-container" *ngIf="inputMessage.errors?.['required']">
         <span class="validation-error-msg">Your message is empty</span>
       </div>
     </div>

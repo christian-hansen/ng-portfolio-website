@@ -21,7 +21,8 @@ form {
 
     background: var(--color-darkbluebg);
 
-    border: 2px solid var(--color-secondary);
+    border: none;
+    outline: 2px solid var(--color-secondary);
     border-radius: 10px;
 
     font-family: "Poppins";
@@ -30,9 +31,17 @@ form {
     font-size: 16px;
     line-height: 120%;
 
+    cursor: pointer;
+
     &:focus-visible {
       border: none;
-      outline: 2px solid var(--color-hover);
+      outline: 2px solid var(--color-primary);
+      color: white;
+    }
+
+    &:hover {
+      border: none;
+      outline: 2px solid var(--color-primary);
       color: white;
     }
   }
@@ -42,6 +51,10 @@ form {
     resize: none
   }
 
+}
+
+.validation-container {
+  margin-top: 10px;
 }
 
 .validation-error-msg {

@@ -11,7 +11,7 @@ portfolioitems: any = [
     gitLink: 'https://www.github.com',
     liveLink: 'https://www.hansen-net.de',
     title: 'El Pollo Loco',
-    description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+    description: '"El Pollo Loco" is a jump and run game developed with object-oriented JavaScript.',
     tags: ['Javascript', 'Canvas', 'HTML', 'CSS'],
     id: 'displayPortfolioItem1'
   },
@@ -21,16 +21,16 @@ portfolioitems: any = [
     gitLink: 'https://www.github.com',
     liveLink: 'https://www.hansen-net.de',
     title: 'JOIN',
-    description: 'Lorem ipsum...',
-    tags: ['Angular', 'Javascript', 'HTML', 'CSS', 'Firebase']
+    description: '"JOIN" is a simple Customer Relationship Management (CRM) application written in vanilla Javascript.',
+    tags: ['Javascript', 'HTML', 'CSS']
   },
   {
     mainImage: "/assets/img/portfolio/pokedex.png",
     backgroundImage: "/assets/img/portfolio/pokedex.png",
     gitLink: 'https://www.github.com',
     liveLink: 'https://www.hansen-net.de',
-    title: 'El Pollo Loco',
-    description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+    title: 'Pokedex',
+    description: 'Lorem ipsum...',
     tags: ['Javascript', 'HTML', 'CSS'],
     id: 'displayPortfolioItem1'
   },
@@ -39,7 +39,7 @@ portfolioitems: any = [
     backgroundImage: "/assets/img/portfolio/crm.png",
     gitLink: 'https://www.github.com',
     liveLink: 'https://www.hansen-net.de',
-    title: 'JOIN',
+    title: 'Simple CRM',
     description: 'Lorem ipsum...',
     tags: ['Angular', 'Javascript', 'HTML', 'CSS']
   }
