@@ -20,11 +20,12 @@ nav {
   gap: 29px;
   font-size: 23px;
 
-  a {
+  div {
     cursor: pointer;
 
     &:hover {
       color: var(--color-primary);
+      text-decoration: underline;
     }
   }
 }

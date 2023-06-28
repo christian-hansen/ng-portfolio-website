@@ -37,4 +37,8 @@ export class SectionContactComponent implements AfterViewInit, OnDestroy {
       this.subscription.unsubscribe();
     }
   }
+
+  scrollToTop() {
+    this.scrollService.scrollToTop();
+  }
 }

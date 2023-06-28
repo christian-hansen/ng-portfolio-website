@@ -15,5 +15,8 @@ export class SectionTitleComponent {
   scrollToContact(): void {
     this.scrollService.scrollToContact();
   }
+
+
 }
+
 

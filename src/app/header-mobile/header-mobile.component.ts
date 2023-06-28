@@ -42,4 +42,8 @@ export class HeaderMobileComponent {
     this.scrollService.scrollToAbout();
     this.toggleMobileNav();
   }
+
+  scrollToTop(): void {
+    this.scrollService.scrollToTop();
+  }
 }

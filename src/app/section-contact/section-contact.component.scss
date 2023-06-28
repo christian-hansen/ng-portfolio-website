@@ -43,6 +43,11 @@ app-contact-form {
       background: url("/assets/img/icons/up-btn-green.png");
       background-repeat: no-repeat;
     }
+
+    &:active {
+      background: url("/assets/img/icons/up-btn.png");
+      background-repeat: no-repeat;
+    }
   }
 
 @media (min-width: 1200px) {

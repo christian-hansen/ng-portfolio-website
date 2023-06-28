@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { ScrollService } from '../scroll.service';
 
 @Component({
@@ -7,6 +8,7 @@ import { ScrollService } from '../scroll.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
   constructor (private scrollService: ScrollService) {
   }
 
@@ -25,4 +27,10 @@ export class HeaderComponent {
   scrollToSkills(): void {
     this.scrollService.scrollToSkills();
   }
+
+  scrollToTop(): void {
+    this.scrollService.scrollToTop();
+  }
+
+
 }

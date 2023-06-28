@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { ScrollService } from './scroll.service';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +11,11 @@ export class AppComponent {
 showImprint: boolean = false;
   
 
+
+constructor (private scrollService: ScrollService) {
+}
+
+scrollToBottom(): void {
+  this.scrollService.scrollToBottom();
+}
 }

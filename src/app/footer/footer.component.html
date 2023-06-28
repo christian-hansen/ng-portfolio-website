@@ -1,8 +1,8 @@
-<div class="container hidemobile" hidden="">
+<div #bottomSection class="container hidemobile" hidden="">
   <div class="logo hidemobile">CH <span>dev</span></div>
-  <span class="hidemobile">Imprint</span>
+  <span class="hidemobile pointer" (click)="openImprint()">Imprint</span>
 </div>
 <div class="logo margin hidedesktop">CH <span>dev</span></div>
-<div class="copyright">C Christian Hansen 2023</div>
+<div class="copyright">© Christian Hansen 2023</div>
 <div class="icon-ctn"><app-section-icons class="moveright"></app-section-icons></div>
-<div class="hidedesktop" routerLink="/imprint">Imprint</div>
+<div class="hidedesktop pointer" (click)="openImprint()">Imprint</div>
