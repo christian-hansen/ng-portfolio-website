@@ -236,6 +236,7 @@ app-section-icons {
 }
 
 app-section-portfolio {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -247,6 +248,7 @@ app-section-portfolio {
 }
 
 app-section-contact {
+  position: relative;
   padding: 0px 25px;
 
   @media (min-width: 1200px) {
@@ -385,6 +387,7 @@ app-footer {
   align-items: center;
   gap: 30px;
   padding: 50px 25px;
+  background-color: var(--color-background);
 
   @media (min-width: 1200px) {
     padding: 50px 100px;

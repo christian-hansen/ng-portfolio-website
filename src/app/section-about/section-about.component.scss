@@ -1,7 +1,13 @@
 .about-section-container {
+  position: relative;
   padding: 90px 25px 150px 25px;
   display: flex;
   flex-direction: column;
+
+  // background: url("/assets/img/bg/purple-shadow-right.png");
+  // background-position: right;
+  // background-repeat: no-repeat;
+  // background-size: 100%;
 
   @media (min-width: 1200px) {
     padding: 90px 100px 150px 100px;
@@ -79,5 +85,21 @@
     width: 60px;
     height: 60px;
     margin-right: 0px;
+  }
+}
+
+.about-bg-form {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  height: 400px;
+  overflow: hidden;
+  z-index: -1;
+
+  @media (min-width: 1200px) {
+    height: 640px;
+    top: -130px;
+    right: 0px;
+
   }
 }

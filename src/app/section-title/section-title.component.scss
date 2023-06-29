@@ -28,9 +28,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 35px;
-
- 
+  gap: 35px; 
 }
 
 
@@ -44,7 +42,14 @@
   justify-content: center;
   align-items: center;
   padding-top: 35px;
+
+  @media (max-width: 390px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
+
+
 
 // button {
 //     margin-top: 26px;
@@ -59,6 +64,12 @@
   margin: -6%;
   margin-left: -8%;
 
+  @media (max-width: 390px) {
+    font-size: 21px;
+    rotate: 0deg;
+    margin: 0%;
+  }
+
   @media (min-width: 1200px) {
     font-size: 46px;
     margin: -3%;
@@ -71,6 +82,10 @@
   // align-items: center;
   width: 81%;
   margin: 0;
+
+  @media (max-width: 390px) {
+    width: 100%;
+  }
 }
 
 .myname {
@@ -78,6 +93,11 @@
   font-weight: 700;
   color: white;
   line-height: 120%;
+
+
+  @media (max-width: 390px) {
+    font-size: 23px;
+  }
 
   @media (min-width: 1200px) {
     font-size: 53px;
@@ -90,6 +110,10 @@
   color: var(--color-secondary);
   line-height: 120%;
   // margin-bottom: 26px;
+
+  @media (max-width: 390px) {
+    font-size: 23px;
+  }
 
   @media (min-width: 1200px) {
     font-size: 44px;
@@ -164,6 +188,18 @@
   top: 40vh;
 
   z-index: -1;
+
+  @media (min-height: 1300px) {
+    top: 35vh;
+  }
+
+  @media (max-height: 590px) {
+    top: 20vh;
+  }
+
+  @media (max-height: 720px) {
+    top: 30vh;
+  }
 
   @media (min-width: 1200px) {
     top: 60%;

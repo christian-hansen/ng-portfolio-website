@@ -58,3 +58,33 @@
   //   column-gap: 2vw;
   // }
 }
+
+.portfolio-bg-form-bottom {
+  position: absolute;
+  bottom: -110px;
+  right: 0;
+  height: 500px;
+  overflow: hidden;
+  z-index: -1;
+
+  @media (min-width: 1200px) {
+    height: 768px;
+    bottom: -100px;
+    right: 0px;
+  }
+}
+
+.portfolio-bg-form-top {
+  position: absolute;
+  top: 550px;
+  left: -55px;
+  height: 400px;
+  overflow: hidden;
+  z-index: -1;
+
+  @media (min-width: 1200px) {
+    height: 900px;
+    top: 150px;
+    left: -120px;
+  }
+}

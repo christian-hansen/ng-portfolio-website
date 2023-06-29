@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImprintService } from '../imprint.service';
 import { ScrollService } from '../scroll.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class HeaderMobileComponent {
   iconClose: string = '/assets/img/icons/mobilemenu-close-final.png';
   iconHeader: any = this.iconMenu;
 
-  constructor(private scrollService: ScrollService) {}
+  constructor(private scrollService: ScrollService, private imprintService: ImprintService) {}
 
   toggleMobileNav() {
     console.log('toggle');
@@ -45,5 +46,10 @@ export class HeaderMobileComponent {
 
   scrollToTop(): void {
     this.scrollService.scrollToTop();
+  }
+
+  openImprint() {
+    this.toggleMobileNav();
+    this.imprintService.openImprint();    
   }
 }
