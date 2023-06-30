@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-section-icons',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./section-icons.component.scss']
 })
 export class SectionIconsComponent {
+
+  constructor (private scrollService: ScrollService) {
+  }
+
+  scrollToContactForm(): void {
+    this.scrollService.scrollToContact();
+  }
 
 }

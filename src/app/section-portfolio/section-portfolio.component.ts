@@ -20,17 +20,13 @@ export class SectionPortfolioComponent implements OnInit, AfterViewInit, OnDestr
   }
 
   ngAfterViewInit() {
-    this.subscription = this.scrollService.scrollToPortfolioSection$.subscribe(
-      () => {
-        const elementPosition = this.target.nativeElement.offsetTop; // Get the top position of the element
-        const adjustment = 150; // Set your adjustment value
-        window.scrollTo({
-          top: elementPosition - adjustment,
-          behavior: 'smooth',
-        }); // Scroll to the adjusted position
-      }
-    );
+    this.subscription = this.scrollService.scrollToPortfolioSection$.subscribe(() => {
+      const elementPosition = getOffset(this.target.nativeElement); // Use helper function to get position
+      const adjustment = 150;
+      window.scrollTo({ top: elementPosition - adjustment, behavior: 'smooth' });
+    });
   }
+  
 
   ngOnDestroy() {
     if (this.subscription) {
@@ -41,4 +37,15 @@ export class SectionPortfolioComponent implements OnInit, AfterViewInit, OnDestr
   getPortfolioItems() {
     this.portfolio = this.portfolioItemService.getPortfolio();
   }
+}
+
+function getOffset(el: HTMLElement): number {
+  let offsetTop = 0;
+
+  while (el) {
+    offsetTop += el.offsetTop;
+    el = el.offsetParent as HTMLElement;
+  }
+
+  return offsetTop;
 }

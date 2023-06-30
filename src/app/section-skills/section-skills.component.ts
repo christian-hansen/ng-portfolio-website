@@ -1,4 +1,10 @@
-import { AfterViewInit, Component, OnDestroy, ViewChild, ElementRef } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  OnDestroy,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Data } from '@angular/router';
 import { ScrollService } from '../scroll.service';
@@ -7,17 +13,17 @@ import { SkillsService } from '../skills.service';
 @Component({
   selector: 'app-section-skills',
   templateUrl: './section-skills.component.html',
-  styleUrls: ['./section-skills.component.scss']
+  styleUrls: ['./section-skills.component.scss'],
 })
 export class SectionSkillsComponent implements AfterViewInit, OnDestroy {
   skills: any = [];
   @ViewChild('skillsSection', { static: true }) target: ElementRef;
   private subscription: Subscription;
 
-  constructor(private skillService: SkillsService, private scrollService: ScrollService) {
-
-  }
-
+  constructor(
+    private skillService: SkillsService,
+    private scrollService: ScrollService
+  ) {}
 
   scrollToContact(): void {
     this.scrollService.scrollToContact();
@@ -45,9 +51,8 @@ export class SectionSkillsComponent implements AfterViewInit, OnDestroy {
   ngOnInit(): void {
     this.getSkills();
   }
-  
-getSkills(): void {
-this.skills = this.skillService.getSkills();
-}
 
+  getSkills(): void {
+    this.skills = this.skillService.getSkills();
+  }
 }

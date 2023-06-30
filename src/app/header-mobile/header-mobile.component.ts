@@ -16,8 +16,6 @@ export class HeaderMobileComponent {
   constructor(private scrollService: ScrollService, private imprintService: ImprintService) {}
 
   toggleMobileNav() {
-    console.log('toggle');
-
     this.displayMobileNav = !this.displayMobileNav;
     if (this.iconHeader == this.iconMenu) {
       this.iconHeader = this.iconClose;

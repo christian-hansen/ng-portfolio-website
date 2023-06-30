@@ -14,22 +14,17 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./section-contact.component.scss'],
 })
 export class SectionContactComponent implements AfterViewInit, OnDestroy {
-  @ViewChild('contact', { static: true }) target: ElementRef;
+  @ViewChild('contactSection', { static: true }) target: ElementRef;
   private subscription: Subscription;
 
   constructor(private scrollService: ScrollService) {}
 
   ngAfterViewInit() {
-    this.subscription = this.scrollService.scrollToContactForm$.subscribe(
-      () => {
-        const elementPosition = this.target.nativeElement.offsetTop; // Get the top position of the element
-        const adjustment = 150; // Set your adjustment value
-        window.scrollTo({
-          top: elementPosition - adjustment,
-          behavior: 'smooth',
-        }); // Scroll to the adjusted position
-      }
-    );
+    this.subscription = this.scrollService.scrollToContactForm$.subscribe(() => {
+      const elementPosition = getOffset(this.target.nativeElement); // Use helper function to get position
+      const adjustment = 150;
+      window.scrollTo({ top: elementPosition - adjustment, behavior: 'smooth' });
+    });
   }
 
   ngOnDestroy() {
@@ -41,4 +36,15 @@ export class SectionContactComponent implements AfterViewInit, OnDestroy {
   scrollToTop() {
     this.scrollService.scrollToTop();
   }
+}
+
+function getOffset(el: HTMLElement): number {
+  let offsetTop = 0;
+
+  while (el) {
+    offsetTop += el.offsetTop;
+    el = el.offsetParent as HTMLElement;
+  }
+
+  return offsetTop;
 }
