@@ -19,7 +19,7 @@ portfolioitems: any = [
     mainImage: "/assets/img/portfolio/Website01.png",
     backgroundImage: "/assets/img/portfolio/Website00.png",
     gitLink: 'https://github.com/christian-hansen/portfolio-website',
-    liveLink: 'https://www.christian-hansen.dev',
+    liveLink: 'https://www.christian-hansen.eu',
     title: 'Personal website',
     description: 'My personal portfolio website that was created with the Angular framework.',
     tags: ['Angular', 'Typescript', 'HTML', 'CSS']
