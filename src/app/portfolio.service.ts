@@ -5,43 +5,42 @@ import { Injectable } from '@angular/core';
 })
 export class PortfolioService {
 portfolioitems: any = [
-  {
-    mainImage: "/assets/img/portfolio/Pollo-Loco01.png",
-    backgroundImage: "/assets/img/portfolio/Pollo-Loco00.png",
-    gitLink: 'https://www.github.com',
-    liveLink: 'https://www.hansen-net.de',
-    title: 'El Pollo Loco',
-    description: '"El Pollo Loco" is a jump and run game developed with object-oriented JavaScript.',
-    tags: ['Javascript', 'Canvas', 'HTML', 'CSS'],
-    id: 'displayPortfolioItem1'
-  },
+  
   {
     mainImage: "/assets/img/portfolio/Join01.png",
     backgroundImage: "/assets/img/portfolio/Join00.png",
-    gitLink: 'https://www.github.com',
-    liveLink: 'https://www.hansen-net.de',
+    gitLink: 'https://github.com/christian-hansen/join-app',
+    liveLink: 'https://christian-hansen.developerakademie.net/join/',
     title: 'JOIN',
     description: '"JOIN" is a simple Customer Relationship Management (CRM) application written in vanilla Javascript.',
     tags: ['Javascript', 'HTML', 'CSS']
   },
   {
-    mainImage: "/assets/img/portfolio/pokedex.png",
-    backgroundImage: "/assets/img/portfolio/pokedex.png",
-    gitLink: 'https://www.github.com',
-    liveLink: 'https://www.hansen-net.de',
-    title: 'Pokedex',
-    description: 'Lorem ipsum...',
-    tags: ['Javascript', 'HTML', 'CSS'],
-    id: 'displayPortfolioItem1'
+    mainImage: "/assets/img/portfolio/Website01.png",
+    backgroundImage: "/assets/img/portfolio/Website00.png",
+    gitLink: 'https://github.com/christian-hansen/portfolio-website',
+    liveLink: 'https://www.christian-hansen.dev',
+    title: 'Personal website',
+    description: 'My personal portfolio website that was created with the Angular framework.',
+    tags: ['Angular', 'Typescript', 'HTML', 'CSS']
+  },
+  {
+    mainImage: "/assets/img/portfolio/Pollo-Loco01.png",
+    backgroundImage: "/assets/img/portfolio/Pollo-Loco00.png",
+    gitLink: 'https://github.com/christian-hansen/el-pollo-loco',
+    liveLink: 'https://christian-hansen.developerakademie.net/elpolloloco/',
+    title: 'El Pollo Loco',
+    description: '"El Pollo Loco" is a jump and run game developed with object-oriented JavaScript.',
+    tags: ['Javascript', 'Canvas', 'HTML', 'CSS']
   },
   {
     mainImage: "/assets/img/portfolio/crm.png",
     backgroundImage: "/assets/img/portfolio/crm.png",
-    gitLink: 'https://www.github.com',
-    liveLink: 'https://www.hansen-net.de',
-    title: 'Simple CRM',
+    gitLink: 'https://www.github.com/christian-hansen/',
+    liveLink: 'https://www.hansen-net.de/projekte',
+    title: 'Simple CRM TBD',
     description: 'Lorem ipsum...',
-    tags: ['Angular', 'Javascript', 'HTML', 'CSS']
+    tags: ['Angular', 'Typescript', 'HTML', 'CSS']
   }
 ]
   constructor() { }
