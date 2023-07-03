@@ -12,7 +12,6 @@ export class ImprintComponent {
 constructor(private imprintService: ImprintService,) {}
 
   closeImprintWindow() {
-    this.imprintService.shutdownImprint();    
-    //add class slide-out-left to <app-imprint></app-imprint> somehow
+    this.imprintService.shutdownImprint();
   }
 }

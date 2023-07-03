@@ -17,9 +17,6 @@ export class ScrollService {
   private scrollToSkillsSection = new Subject<void>();
   scrollToSkillsSection$ = this.scrollToSkillsSection.asObservable();
 
-  // private scrollToTopSection = new Subject<void>();
-  // scrollToTopSection$ = this.scrollToTopSection.asObservable();
-
   private scrollToBottomSection = new Subject<void>();
   scrollToBottomSection$ = this.scrollToBottomSection.asObservable();
 
@@ -40,7 +37,6 @@ export class ScrollService {
   }
 
   scrollToTop() {
-    // this.scrollToTopSection.next();
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
