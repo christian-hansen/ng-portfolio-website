@@ -9,9 +9,10 @@ import { ImprintService } from '../imprint.service';
 export class ImprintComponent {
 @Output() closeImprint: EventEmitter<any> = new EventEmitter;
 
-constructor(private imprintService: ImprintService) {}
+constructor(private imprintService: ImprintService,) {}
 
   closeImprintWindow() {
-    this.imprintService.closeImprint();
+    this.imprintService.shutdownImprint();    
+    //add class slide-out-left to <app-imprint></app-imprint> somehow
   }
 }

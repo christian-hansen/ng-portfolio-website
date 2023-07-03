@@ -6,6 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ImprintService {
   private _showImprint: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  private _shutImprint: BehaviorSubject<boolean> = new BehaviorSubject(false);
 
   get showImprint() {
     return this._showImprint.asObservable();
@@ -17,5 +18,17 @@ export class ImprintService {
 
   closeImprint() {
     this._showImprint.next(false);
+    this._shutImprint.next(false);
+  }
+
+  shutdownImprint() {
+    this._shutImprint.next(true);
+    setTimeout(() => {
+      this.closeImprint();
+    }, 1000);
+  }
+
+  get shutImprint() {
+    return this._shutImprint.asObservable();
   }
 }

@@ -9,14 +9,18 @@ import { ScrollService } from './scroll.service';
 })
 export class AppComponent implements OnInit {
 showImprint: boolean;
+shutImprint: boolean;
   
 
 
 constructor (private scrollService: ScrollService, private imprintService: ImprintService) {}
 
-ngOnInit() {
+ngOnInit(): void {
   this.imprintService.showImprint.subscribe((value) => {
     this.showImprint = value;
+  });
+  this.imprintService.shutImprint.subscribe((value) => {
+    this.shutImprint = value;
   });
 }
 
