@@ -117,10 +117,17 @@ h4 {
 
 //Header
 .logo {
-  font-size: 32px;
+  font-size: var(--font3);
   font-weight: 700;
-cursor: pointer;
-  span {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+
+  .second {
+    color: var(--color-secondary);
+  }
+
+  div:nth-child(2)  {
     color: var(--color-primary);
   }
 }
@@ -451,14 +458,41 @@ app-footer {
   }
 }
 
-.heartbeat{animation:heartbeat 1.5s ease-in-out infinite both}
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
 
- @keyframes heartbeat{from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out}}
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
 
- .jello-horizontal{animation:jello-horizontal .9s both}
+.jello-horizontal {
+  animation: jello-horizontal 0.9s both;
+}
 
 @keyframes jello-horizontal {
-  0% {    transform: scale3d(1, 1, 1);
+  0% {
+    transform: scale3d(1, 1, 1);
   }
   30% {
     transform: scale3d(1.25, 0.75, 1);
@@ -481,7 +515,7 @@ app-footer {
 }
 
 .scale-up-left {
-	animation: scale-up-left 0.25s ease-in-out both;
+  animation: scale-up-left 0.25s ease-in-out both;
 }
 
 @keyframes scale-up-left {
@@ -496,7 +530,7 @@ app-footer {
 }
 
 .rotate-center {
-	animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
 }
 
 @keyframes rotate-center {
@@ -509,7 +543,11 @@ app-footer {
 }
 
 .slide-in-left {
-	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-out-left {
+  animation: slide-out-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-left {
@@ -523,6 +561,18 @@ app-footer {
   }
 }
 
+@keyframes slide-out-left {
+
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
 
 //Scrollbar
 
@@ -539,6 +589,6 @@ app-footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:var(--color-secondary);
+  background-color: var(--color-secondary);
   border-radius: 30px;
 }
