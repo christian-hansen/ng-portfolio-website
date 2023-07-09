@@ -26,39 +26,46 @@ export class HeaderMobileComponent {
     } else this.iconHeader = this.iconMenu;
   }
 
-  scrollToContact(): void {
-    this.scrollService.scrollToContact();
-    this.toggleMobileNav();
-    this.closeImprint();
+  closeMobileNav () {
+    this.displayMobileNav = false;
+    if (this.iconHeader == this.iconMenu) {
+      this.iconHeader = this.iconClose;
+    } else this.iconHeader = this.iconMenu;
+
   }
 
-  scrollToPortfolio(): void {
-    this.scrollService.scrollToPortfolio();
-    this.toggleMobileNav();
-    this.closeImprint();
-  }
+  // scrollToContact(): void {
+  //   this.scrollService.scrollToContact();
+  //   this.toggleMobileNav();
+  //   this.closeImprint();
+  // }
 
-  scrollToSkills(): void {
-    this.scrollService.scrollToSkills();
-    this.toggleMobileNav();
-    this.closeImprint();
-  }
+  // scrollToPortfolio(): void {
+  //   this.scrollService.scrollToPortfolio();
+  //   this.toggleMobileNav();
+  //   this.closeImprint();
+  // }
 
-  scrollToAbout(): void {
-    this.scrollService.scrollToAbout();
-    this.toggleMobileNav();
-    this.closeImprint();
-  }
+  // scrollToSkills(): void {
+  //   this.scrollService.scrollToSkills();
+  //   this.toggleMobileNav();
+  //   this.closeImprint();
+  // }
 
+  // scrollToAbout(): void {
+  //   this.scrollService.scrollToAbout();
+  //   this.toggleMobileNav();
+  //   this.closeImprint();
+  // }
   scrollToTop(): void {
     this.scrollService.scrollToTop();
     this.closeImprint();
   }
 
-  openImprint() {
-    this.toggleMobileNav();
-    this.imprintService.openImprint();    
-  }
+  // openImprint() {
+  //   this.toggleMobileNav();
+  //   this.imprintService.openImprint();    
+  // }
 
   closeImprint() {
     this.imprintService.closeImprint();

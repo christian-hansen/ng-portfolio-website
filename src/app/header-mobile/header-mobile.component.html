@@ -3,4 +3,4 @@
     <img id="menuicon" src={{iconHeader}} (click)="toggleMobileNav()">
     <!-- <img id="menuicon2" src={{iconHeader}} (click)="toggleMobileNav()"> -->
 </div> 
-<app-mobilenav></app-mobilenav>
+<app-mobilenav *ngIf="displayMobileNav" (linkClick)="closeMobileNav()"></app-mobilenav>

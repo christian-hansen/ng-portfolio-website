@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { ImprintService } from 'src/app/imprint.service';
 import { ScrollService } from 'src/app/scroll.service';
 import {
@@ -25,36 +25,36 @@ import {
   ]
 })
 export class MobilenavComponent {
-isOpen = false;
+@Output() linkClick = new EventEmitter<void>();
 
   constructor(private scrollService: ScrollService, private imprintService: ImprintService) {}
 
 
-toggle() {
-  this.isOpen = !this.isOpen;
-}
+  toggleMobileNav() {
+    this.linkClick.emit();
+  }
 
   scrollToContact(): void {
     this.scrollService.scrollToContact();
-    // this.toggleMobileNav();
+    this.toggleMobileNav();
     this.closeImprint();
   }
 
   scrollToPortfolio(): void {
     this.scrollService.scrollToPortfolio();
-    // this.toggleMobileNav();
+    this.toggleMobileNav();
     this.closeImprint();
   }
 
   scrollToSkills(): void {
     this.scrollService.scrollToSkills();
-    // this.toggleMobileNav();
+    this.toggleMobileNav();
     this.closeImprint();
   }
 
   scrollToAbout(): void {
     this.scrollService.scrollToAbout();
-    // this.toggleMobileNav();
+    this.toggleMobileNav();
     this.closeImprint();
   }
 
@@ -64,7 +64,7 @@ toggle() {
   }
 
   openImprint() {
-    // this.toggleMobileNav();
+    this.toggleMobileNav();
     this.imprintService.openImprint();    
   }
 
