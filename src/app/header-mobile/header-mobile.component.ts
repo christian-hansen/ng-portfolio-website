@@ -2,10 +2,14 @@ import { Component } from '@angular/core';
 import { ImprintService } from '../imprint.service';
 import { ScrollService } from '../scroll.service';
 
+
 @Component({
   selector: 'app-header-mobile',
   templateUrl: './header-mobile.component.html',
   styleUrls: ['./header-mobile.component.scss'],
+  animations: [
+    //animation triggers go here
+]
 })
 export class HeaderMobileComponent {
   displayMobileNav = false;

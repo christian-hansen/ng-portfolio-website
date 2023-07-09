@@ -3,10 +3,4 @@
     <img id="menuicon" src={{iconHeader}} (click)="toggleMobileNav()">
     <!-- <img id="menuicon2" src={{iconHeader}} (click)="toggleMobileNav()"> -->
 </div> 
-<div *ngIf="displayMobileNav" class="mobilemenu">
-    <div (click)="scrollToAbout()">About me</div>
-    <div (click)="scrollToSkills()">Skills</div>
-    <div (click)="scrollToPortfolio()">Portfolio</div>
-    <div (click)="scrollToContact()">Contact</div>
-    <div (click)="openImprint()">Imprint</div>
-</div>
+<app-mobilenav></app-mobilenav>

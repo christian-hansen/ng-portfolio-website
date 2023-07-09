@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -18,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PortfolioItemBoxComponent } from './portfolio-item-box/portfolio-item-box.component';
 import { SuccessMessageComponent } from './contact-form/success-message/success-message.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { MobilenavComponent } from './header-mobile/mobilenav/mobilenav.component';
 
 @NgModule({
   declarations: [
@@ -36,9 +40,11 @@ import { ImprintComponent } from './imprint/imprint.component';
     PortfolioItemBoxComponent,
     SuccessMessageComponent,
     ImprintComponent,
+    MobilenavComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule

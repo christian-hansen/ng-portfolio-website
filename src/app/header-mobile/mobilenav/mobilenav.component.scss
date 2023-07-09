@@ -1,0 +1,43 @@
+.mobilemenu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    font-size: var(--font3);
+  
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-backgroundtransparent);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    // animation: displaymenu 350ms 1;
+  
+    z-index: 99;
+  
+    div {
+      cursor: pointer;
+    }
+  
+  
+  @keyframes displaymenu {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+    
+  }
+  
+    transform-origin: 0% 0%;
+    transform: translateX(0, 100%);
+    transition: 1s;
+    // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
