@@ -124,6 +124,30 @@ h4 {
   font-size: var(--font8);
 }
 
+app-mobilenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  font-size: var(--font3);
+
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-backgroundtransparent);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 99;
+
+  div {
+    cursor: pointer;
+  }
+}
+
 //Lines
 
 .line-icons {

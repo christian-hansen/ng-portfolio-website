@@ -1,31 +1,16 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { ImprintService } from 'src/app/imprint.service';
 import { ScrollService } from 'src/app/scroll.service';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
 
 @Component({
   selector: 'app-mobilenav',
   templateUrl: './mobilenav.component.html',
   styleUrls: ['./mobilenav.component.scss'],
-  animations: [
-    trigger('openClose', [
-    state('closed', style({
-      opacity: 0
-    })), 
-    state('open', style({
-      opacity: 1
-    }))])
-  ]
 })
+
 export class MobilenavComponent {
 @Output() linkClick = new EventEmitter<void>();
+
 
   constructor(private scrollService: ScrollService, private imprintService: ImprintService) {}
 

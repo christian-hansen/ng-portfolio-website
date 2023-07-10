@@ -16,13 +16,19 @@
     right: 0;
     bottom: 0;
   
-    // animation: displaymenu 350ms 1;
+
   
     z-index: 99;
   
     div {
       cursor: pointer;
     }
+  }
+
+    .fadeIn {
+      animation: displaymenu 125ms 1;
+    }
+    
   
   
   @keyframes displaymenu {
@@ -34,10 +40,25 @@
     }
     
   }
-  
-    transform-origin: 0% 0%;
-    transform: translateX(0, 100%);
-    transition: 1s;
-    // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  .fadeOut {
+    animation: hidemenu 125ms 1;
   }
+  
+
+
+@keyframes hidemenu {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+  
+}
+  
+    // transform-origin: 0% 0%;
+    // transform: translateX(0, 100%);
+    // transition: 1s;
+    // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   
