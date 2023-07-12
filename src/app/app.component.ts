@@ -13,7 +13,9 @@ shutImprint: boolean;
   
 
 
-constructor (private scrollService: ScrollService, private imprintService: ImprintService) {}
+constructor (private scrollService: ScrollService, private imprintService: ImprintService) {
+
+}
 
 ngOnInit(): void {
   this.imprintService.showImprint.subscribe((value) => {
