@@ -1,10 +1,10 @@
 <div class="portfolio-item">
     <!-- Portfolio item default view -->
-    <img id="portfolioitem{{index}}" (mouseover)="openPortfolioItem(index)" class="portfolio-image" src="{{ portfolioItem.mainImage }}"
+    <img id="portfolioitem{{index}}" (mouseover)="openPortfolioItem(index)" class="portfolio-image fade-in" src="{{ portfolioItem.mainImage }}"
         alt="{{ portfolioItem['title'] }} image">
 
     <!-- Portfolio item detailed view -->
-    <div id="portfolioitemdetail{{index}}" (mouseleave)="closePortfolioItem(index)" class="portfolio-item-detail d-none"
+    <div id="portfolioitemdetail{{index}}" (mouseleave)="closePortfolioItem(index)" class="portfolio-item-detail d-none fade-in"
         style="background-image: url({{ portfolioItem.backgroundImage }}); background-position: top; background-size: contain; filter: brightness(100%)">
         <div class="background-container"></div>
         <div class="btn-container">
