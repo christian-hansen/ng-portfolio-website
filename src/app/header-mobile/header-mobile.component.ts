@@ -13,7 +13,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     trigger('fadeIn', [
       state('true', style({ opacity: 1, transform: 'translate(0%)'})),
       state('false', style({ opacity: 0, transform: 'translate(100%)'})),
-      transition('* <=> *', [animate('125ms')])
+      transition('* <=> *', [animate('500ms ease-in-out')])
     ])
   ]
 })
