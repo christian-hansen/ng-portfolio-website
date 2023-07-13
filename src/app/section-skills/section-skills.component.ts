@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 import { Data } from '@angular/router';
 import { ScrollService } from '../scroll.service';
 import { SkillsService } from '../skills.service';
-import AOS from 'aos';
+
 
 @Component({
   selector: 'app-section-skills',
@@ -54,7 +54,6 @@ export class SectionSkillsComponent implements AfterViewInit, OnDestroy, OnInit 
 
   ngOnInit(): void {
     this.getSkills();
-    AOS.init();
   }
 
   getSkills(): void {

@@ -19,6 +19,7 @@ export class SectionContactComponent implements AfterViewInit, OnDestroy {
 
   constructor(private scrollService: ScrollService) {}
 
+
   ngAfterViewInit() {
     this.subscription = this.scrollService.scrollToContactForm$.subscribe(() => {
       const elementPosition = getOffset(this.target.nativeElement); // Use helper function to get position

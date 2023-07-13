@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { ScrollService } from '../scroll.service';
 
 @Component({
@@ -11,6 +11,7 @@ export class SectionTitleComponent {
   bgRight: string = "/assets/img/bg/intro-green-shadow.png";
 
   constructor(private scrollService: ScrollService) { }
+
 
   scrollToContact(): void {
     this.scrollService.scrollToContact();

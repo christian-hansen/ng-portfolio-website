@@ -7,10 +7,11 @@ import { ScrollService } from '../scroll.service';
   templateUrl: './section-about.component.html',
   styleUrls: ['./section-about.component.scss']
 })
-export class SectionAboutComponent implements AfterViewInit, OnDestroy{
+export class SectionAboutComponent implements AfterViewInit, OnDestroy {
   @ViewChild('aboutSection', { static: true }) target: ElementRef;
   private subscription: Subscription;
   constructor(private scrollService: ScrollService) {}
+
 
   ngAfterViewInit() {
     this.subscription = this.scrollService.scrollToAboutSection$.subscribe(
