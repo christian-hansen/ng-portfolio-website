@@ -33,6 +33,15 @@ portfolioitems: any = [
     description: '"El Pollo Loco" is a jump and run game developed with object-oriented JavaScript.',
     tags: ['Javascript', 'Canvas', 'HTML', 'CSS']
   },
+  {
+    mainImage: "/assets/img/portfolio/crm.png",
+    backgroundImage: "/assets/img/portfolio/simple-crm.png",
+    gitLink: 'https://github.com/christian-hansen/simple-crm',
+    liveLink: 'https://github.com/christian-hansen/simple-crm',
+    title: 'Simple CRM',
+    description: 'The "Simple CRM" project is currently "work-in-progress" and will be available here soon.',
+    tags: ['Angular', 'Typescript', 'Firebase', 'HTML', 'CSS', 'Material Design']
+  },
   // {
   //   mainImage: "/assets/img/portfolio/crm.png",
   //   backgroundImage: "/assets/img/portfolio/crm.png",
