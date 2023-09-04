@@ -17,7 +17,7 @@ portfolioitems: any = [
   },
   {
     mainImage: "/assets/img/portfolio/Website01.png",
-    backgroundImage: "/assets/img/portfolio/Website00.png",
+    backgroundImage: "/assets/img/portfolio/Website00.jpeg",
     gitLink: 'https://github.com/christian-hansen/portfolio-website',
     liveLink: 'https://www.christian-hansen.eu',
     title: 'Personal website',
