@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { ImprintService } from '../imprint.service';
+import { ImprintService } from '../services/imprint.service';
 
 @Component({
   selector: 'app-imprint',

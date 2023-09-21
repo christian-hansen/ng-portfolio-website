@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ImprintService } from './imprint.service';
-import { ScrollService } from './scroll.service';
+import { ImprintService } from './services/imprint.service';
+import { ScrollService } from './services/scroll.service';
 import AOS from 'aos';
 
 @Component({

@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { PortfolioService } from '../portfolio.service';
-import { ScrollService } from '../scroll.service';
+import { PortfolioService } from '../services/portfolio.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'app-section-portfolio',

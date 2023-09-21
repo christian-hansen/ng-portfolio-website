@@ -4,22 +4,16 @@ data-aos-offset="100"
 data-aos-delay="1000"></div>
 <div #portfolioSection class="portfolio-intro-container" data-aos="fade-up" data-aos-duration="1000">
     <h2 data-aos="fade-up" data-aos-duration="1000">Portfolio</h2>
-    <span>This page is a sample of my work - please feel free to try them out</span>
+    <div>
+      <p>Dive into a curated selection of my recent projects below. You can explore the functionality firsthand and delve into the source code via the provided GitHub links.</p>
+      <p>Stay tuned — more innovative projects are underway!</p>
+    </div>
+    
 </div>
 
     <div class="portfolio-items-container" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1500">
         <app-portfolio-item-box *ngFor="let portfolioItem of portfolio; let i = index" [portfolioItem]="portfolioItem" [index]="i"></app-portfolio-item-box>
       </div>
-
-
-      <!-- <div class="portfolio-intro-container">
-        <h2>Portfolio 2</h2>
-        <span>This page is a sample of my work - please feel free to try them out</span>
-    </div>
-
-    <div class="portfolio-items-container">
-        <app-portfolio-item *ngFor="let portfolioItem of portfolio; let i = index" [portfolioItem]="portfolioItem" [index]="i"></app-portfolio-item>
-      </div> -->
 
 
       <img class="portfolio-bg-form-top" src="/assets/img/bg/darkblue-shadow-left.png">

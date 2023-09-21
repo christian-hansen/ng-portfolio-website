@@ -21,7 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PortfolioItemBoxComponent } from './portfolio-item-box/portfolio-item-box.component';
 import { SuccessMessageComponent } from './contact-form/success-message/success-message.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import { MobilenavComponent } from './header-mobile/mobilenav/mobilenav.component';
+import { MobilenavComponent } from './mobilenav/mobilenav.component';
 
 @NgModule({
   declarations: [

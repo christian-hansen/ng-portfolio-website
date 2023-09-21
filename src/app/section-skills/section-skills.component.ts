@@ -8,8 +8,8 @@ import {
 } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Data } from '@angular/router';
-import { ScrollService } from '../scroll.service';
-import { SkillsService } from '../skills.service';
+import { ScrollService } from '../services/scroll.service';
+import { SkillsService } from '../services/skills.service';
 
 
 @Component({

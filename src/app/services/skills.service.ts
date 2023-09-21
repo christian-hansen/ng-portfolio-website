@@ -15,7 +15,8 @@ export class SkillsService {
     {logo: '/assets/img/icons/material-design-big.png',description: 'Material Design'},
     {logo: '/assets/img/icons/bootstrap.svg',description: 'Bootstrap'},
     {logo: '/assets/img/icons/git.png',description: 'GIT'},
-    {logo: '/assets/img/icons/scrum.png',description: 'Scrum'}
+    {logo: '/assets/img/icons/scrum.png',description: 'Scrum'},
+    {logo: '/assets/img/icons/wordpress.png',description: 'WordPress'}
   ]
 
   constructor() { }

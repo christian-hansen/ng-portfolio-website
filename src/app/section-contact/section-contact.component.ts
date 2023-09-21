@@ -5,7 +5,7 @@ import {
   Component,
   OnDestroy,
 } from '@angular/core';
-import { ScrollService } from '../scroll.service';
+import { ScrollService } from '../services/scroll.service';
 import { Subscription } from 'rxjs';
 
 @Component({

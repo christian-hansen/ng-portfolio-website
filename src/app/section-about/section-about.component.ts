@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ScrollService } from '../scroll.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'app-section-about',

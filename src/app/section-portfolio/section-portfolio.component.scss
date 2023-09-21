@@ -13,8 +13,17 @@
     z-index: 2;
   }
 
-  span {
+  div {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    gap: 16px;
+    
+
+    p {
+      margin: 0;
+      line-height: 120%;
+    }
   }
 }
 
@@ -87,4 +96,12 @@
     top: 150px;
     left: -120px;
   }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-intro-container {
+  div {
+gap: 8px;
+  }
+}
 }

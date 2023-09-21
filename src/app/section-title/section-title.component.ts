@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter, OnInit } from '@angular/core';
-import { ScrollService } from '../scroll.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'app-section-title',

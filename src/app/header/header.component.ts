@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ImprintService } from '../imprint.service';
+import { ImprintService } from '../services/imprint.service';
 
-import { ScrollService } from '../scroll.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'app-header',

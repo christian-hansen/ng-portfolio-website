@@ -1,6 +1,8 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { ImprintService } from 'src/app/imprint.service';
-import { ScrollService } from 'src/app/scroll.service';
+import { ImprintService } from '../services/imprint.service';
+import { ScrollService } from '../services/scroll.service';
+
+
 
 @Component({
   selector: 'app-mobilenav',

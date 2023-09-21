@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnDestroy, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ImprintService } from '../imprint.service';
-import { ScrollService } from '../scroll.service';
+import { ImprintService } from '../services/imprint.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'app-footer',
