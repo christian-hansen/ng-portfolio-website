@@ -16,7 +16,7 @@ showSuccess: boolean = false;
     this.appendFormData(formData, this.inputData);
 
     await fetch(
-      'https://christian-hansen.developerakademie.net/testmail/send_mail/send_mail.php',
+      'https://www.christian-hansen.dev/m/send_mail.php',
       {
         method: 'POST',
         body: formData,

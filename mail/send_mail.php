@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'mail@hansen-net.de'; # Bitte hier deine E-Mail angeben
+$recipient = 'kontakt@christian-hansen.dev'; # Bitte hier deine E-Mail angeben
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
@@ -41,7 +41,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case ("POST"): //Send the email;
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  mail@christian-hansen.dev";
+        $headers = "From:  kontakt@christian-hansen.dev";
 
         $message = "There is a new request from www.christian-hansen.dev:\r\n";
         $message .= "Name: " . $_POST['name'] . "\r\n";
