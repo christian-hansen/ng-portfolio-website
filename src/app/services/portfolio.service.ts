@@ -33,6 +33,15 @@ portfolioitems: any = [
     description: 'My personal portfolio website that was created with the Angular framework.',
     tags: ['Angular', 'Typescript', 'HTML', 'CSS']
   },
+    {
+    mainImage: "/assets/img/portfolio/weather-phone.png",
+    backgroundImage: "/assets/img/portfolio/weather00.png",
+    gitLink: 'https://github.com/christian-hansen/ng-weather',
+    liveLink: 'https://weather.christian-hansen.dev/',
+    title: 'Weather App',
+    description: 'This Angular application is using the Openweather API to display current weather and forecast data for selected cities',
+    tags: ['Angular', 'Typescript', 'API', 'HTML', 'CSS']
+  },
   // {
   //   mainImage: "/assets/img/portfolio/crm.png",
   //   backgroundImage: "/assets/img/portfolio/simple-crm.png",
