@@ -11,6 +11,7 @@ import { ScrollService } from '../services/scroll.service';
 export class FooterComponent implements AfterViewInit, OnDestroy {
   @ViewChild('bottomSection', { static: true }) target: ElementRef;
   private subscription: Subscription;
+  year: Date = new Date();
   constructor(private scrollService: ScrollService, private imprintService: ImprintService) {}
 
 
