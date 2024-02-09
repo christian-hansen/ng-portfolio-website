@@ -7,12 +7,12 @@ export class PortfolioService {
 portfolioitems: any = [
   
   {
-    mainImage: "/assets/img/portfolio/crm.png",
-    backgroundImage: "/assets/img/portfolio/crm.png",
-    gitLink: 'https://www.github.com/christian-hansen/',
+    mainImage: "/assets/img/portfolio/da-bubble01.png",
+    backgroundImage: "/assets/img/portfolio/da-bubble00.png",
+    gitLink: 'https://github.com/TomtePain/DaBubble-Chat-Messenger',
     liveLink: 'https://da-bubble.codiy.de/',
     title: 'DA-Bubble',
-    description: 'Experience "DA-Bubble", a real-time chat application seamlessly connected to a Firebase database, enhancing your communication experience.',
+    description: 'Experience "DA-Bubble," a real-time Angular chat application developed collaboratively and seamlessly integrated with a Firebase database, enriching your communication experience.',
     tags: ['Angular', 'Typescript', 'HTML', 'CSS', 'Firebase']
   },
   {
